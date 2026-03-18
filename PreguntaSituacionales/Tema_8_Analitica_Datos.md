@@ -1,361 +1,255 @@
-# Tema 8 - Analitica y Datos (20 casos)
+# Tema 8: Técnicas de Analítica de Datos (Descriptiva, Predictiva y Machine Learning)
+1. El equipo de analítica de la CGR quiere agrupar a los 50.000 contratistas del Estado en 4 "perfiles de riesgo" según su comportamiento histórico (cantidad de multas, retrasos, varianza presupuestal). No se tiene una etiqueta previa de quién es fraudulento y quién no. ¿Qué técnica de Machine Learning es la adecuada para este problema?
 
-Pregunta 1.
-Recibes dataset con faltantes en montos y fechas clave para series temporales.
+A) Un modelo Supervisado de Regresión Lineal.
 
-Que haces?
+B) Un modelo No Supervisado de Clustering o Agrupamiento (como K-Means o DBSCAN) para descubrir agrupaciones naturales basadas en la similitud de sus variables.
 
-- A) Ignorar
-- B) Imputar segun metodo apropiado (forward fill/mediana) y marcar imputados
-- C) Eliminar todo
-- D) Rellenar con cero
-<details><summary>Mostrar respuesta</summary>
+C) Un algoritmo de Análisis de Sentimientos basado en texto.
 
-Respuesta correcta: B
+D) Un modelo de Clasificación Binaria (Árbol de Decisión).
 
-Justificacion: La imputacion documentada preserva analisis y evita sesgos.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> Cuando no tenemos una variable objetivo ("target" o etiqueta predefinida), usamos aprendizaje No Supervisado. El clustering evalúa las distancias matemáticas entre los datos y los agrupa por características similares, ideal para perfilamiento de riesgos exploratorio.
 </details>
 
+2. Al entrenar un modelo para predecir si un proyecto de infraestructura tendrá sobrecostos graves (Sí/No), el Científico de Datos nota que en los datos de entrenamiento introdujo la variable "Fecha de Liquidación Final". ¿Por qué esto es un error crítico conocido como "Data Leakage" (Fuga de Datos)?
 
-Pregunta 2.
-Se detectan outliers extremos en pagos; el jefe pide quitarlos para que el modelo 'luzca bien'.
+A) Porque las fechas no pueden usarse en Machine Learning, solo los números.
 
-Que haces?
+B) Porque la variable incluye información del futuro (el proyecto solo se liquida cuando ya terminó). El modelo debe predecir el riesgo en la fase de planeación/adjudicación, usando solo la información que estaría disponible en ese momento.
 
-- A) Quitarlos sin documentar
-- B) Analizar causa (error, caso real) y usar metodos robustos o winsorizacion con soporte
-- C) Promediar
-- D) Ignorar
-<details><summary>Mostrar respuesta</summary>
+C) Porque la fecha está en formato de Estados Unidos (Mes/Día/Año).
 
-Respuesta correcta: B
+D) No es un error, cuantas más variables tenga el modelo, mejor será la predicción.
 
-Justificacion: Los outliers se tratan segun causa, con metodos y trazabilidad.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> El Data Leakage ocurre cuando usamos información para entrenar el modelo que, en la realidad, no conoceríamos al momento de hacer la predicción. Esto crea un modelo con una precisión engañosamente alta (casi 100%) que fracasará rotundamente en la vida real.
 </details>
 
+3. Se aplica un modelo de Clasificación (Regresión Logística) para detectar carteles de licitación. El modelo arroja una "Exactitud" (Accuracy) del 99%. Sin embargo, al revisar, el modelo clasificó absolutamente todas las licitaciones como "Sin Cartel" (Normales). Como los carteles representan el 1% de los casos reales, el modelo acertó en el 99%. ¿Qué métrica se debió usar en este caso de "Datos Desbalanceados"?
 
-Pregunta 3.
-Variables categoricas tienen alta cardinalidad (miles de niveles).
+A) Precisión, Exhaustividad (Recall) o F1-Score, enfocándose en la capacidad del modelo para detectar correctamente la clase minoritaria (los fraudes).
 
-Que haces?
+B) Aumentar el margen de error estadístico.
 
-- A) One-hot a todo
-- B) Agrupar niveles raros y usar codificacion target/WOE con validacion
-- C) Eliminar variable
-- D) Orden alfabetico
-<details><summary>Mostrar respuesta</summary>
+C) Usar la moda estadística poblacional.
 
-Respuesta correcta: B
+D) El Accuracy del 99% es perfecto y el modelo está listo para producción.
 
-Justificacion: Se controla cardinalidad y se usa codificacion adecuada.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
+
+<i>Justificación:</i> En fraude, terrorismo o enfermedades raras (datos extremadamente desbalanceados), el Accuracy es inútil porque predecir "todo es normal" da una puntuación alta matemática. El Recall mide cuántos de los fraudes reales el modelo logró capturar, que es lo que realmente le importa a la Contraloría.
 </details>
 
+4. Durante la fase de "Análisis Exploratorio de Datos" (EDA) de la facturación de un hospital, el analista encuentra que el valor de un acetaminofén está registrado por $15.000.000 de pesos. Estadísticamente, esto es un:
 
-Pregunta 4.
-Data leakage: en entrenamiento aparece una variable creada con datos del futuro.
+A) Parámetro de tendencia central.
 
-Que haces?
+B) Valor atípico (Outlier). Desde el enfoque de control fiscal, no debe eliminarse de la base, sino separarse para iniciar una auditoría forense inmediata por presunto peculado o error de digitación sistemático.
 
-- A) Mantenerla
-- B) Eliminarla del entrenamiento y rehacer validacion temporal
-- C) Imputar
-- D) Usar KNN
-<details><summary>Mostrar respuesta</summary>
+C) Valor nulo (Missing value).
 
-Respuesta correcta: B
+D) Sesgo de confirmación positivo.
 
-Justificacion: Evitar leakage exige respetar corte temporal y reentrenar.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> Los valores atípicos (outliers) son puntos de datos que difieren significativamente de las observaciones restantes. En estadística tradicional suelen eliminarse para no sesgar el modelo, pero en auditoría analítica, el outlier es a menudo la evidencia del fraude (la anomalía es el hallazgo).
 </details>
 
+5. El director pide calcular el "Salario Promedio" de una entidad pequeña. Hay 10 empleados que ganan $2.000.000 y el Gerente gana $50.000.000. Si usamos la "Media" (Promedio aritmético), dirá que en promedio ganan $6.360.000, lo cual no representa la realidad de la mayoría. ¿Qué medida de analítica descriptiva es robusta ante estos valores extremos?
 
-Pregunta 5.
-Desbalance severo (1% positivos) en deteccion de fraude.
+A) La Desviación Estándar.
 
-Que haces?
+B) La Varianza absoluta.
 
-- A) Accuracy simple
-- B) Ajustar umbral, usar metricas como AUC/PR y tecnicas de balance (SMOTE, class weights)
-- C) Duplicar negativos
-- D) RMSE
-<details><summary>Mostrar respuesta</summary>
+C) La Mediana, porque divide la distribución exactamente por la mitad (el 50% de los datos está por debajo y el 50% por encima) y no se ve afectada por valores atípicos (outliers).
 
-Respuesta correcta: B
+D) El Rango Intercuartílico (IQR).
 
-Justificacion: Se usan metricas y tecnicas adecuadas para clases desbalanceadas.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
+
+<i>Justificación:</i> La media es muy sensible a los extremos. La mediana es una medida de tendencia central "robusta". Al ordenar los sueldos, el valor central representará de manera mucho más fiel el salario típico de los trabajadores de esa entidad, aislando el efecto del salario desproporcionado del gerente.
 </details>
 
+6. Para predecir el valor monetario futuro exacto (ej. sobrecosto en millones de pesos) de una obra con base en sus dimensiones geométricas, tiempo de ejecución y materiales, el modelo de Machine Learning apropiado debe ser de tipo:
 
-Pregunta 6.
-Solicitan explicabilidad del modelo para toma de decisiones.
+A) Clasificación (Classification).
 
-Que haces?
+B) Regresión (Regression), como Regresión Lineal Múltiple o Gradient Boosting Regressor, dado que la variable objetivo es un número continuo.
 
-- A) Modelo caja negra
-- B) Aplicar interpretabilidad (SHAP/feature importance) y reporte de impacto
-- C) Omitir
-- D) Entregar solo el codigo
-<details><summary>Mostrar respuesta</summary>
+C) Agrupamiento (Clustering).
 
-Respuesta correcta: B
+D) Reducción de dimensionalidad (PCA).
 
-Justificacion: La explicabilidad es clave en gobierno de datos y auditoria.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> En Machine Learning Supervisado, si queremos predecir una categoría (ej. Fraude: Sí/No) usamos modelos de Clasificación. Si queremos predecir un valor numérico infinito o continuo (ej. precio, costo, temperatura), usamos modelos de Regresión.
 </details>
 
+7. Un modelo de Árbol de Decisión se entrenó para encontrar contratos direccionados. Al evaluarlo con los datos con los que aprendió (Train Data), acierta el 100%. Pero cuando se le presentan contratos nuevos que nunca ha visto (Test Data), su precisión cae al 45%. ¿Qué fenómeno de analítica de datos acaba de ocurrir?
 
-Pregunta 7.
-Pipeline ETL falla por cambios en esquema (columna nueva).
+A) Subajuste (Underfitting); el modelo es demasiado simple.
 
-Que haces?
+B) Sobreajuste (Overfitting); el modelo memorizó los datos de entrenamiento en lugar de aprender los patrones generales, perdiendo su capacidad de generalización.
 
-- A) Modificar a mano cada vez
-- B) Implementar validaciones de esquema y contratos de datos; versionar
-- C) Ignorar
-- D) Desactivar alerta
-<details><summary>Mostrar respuesta</summary>
+C) Fuga de datos (Data Leakage).
 
-Respuesta correcta: B
+D) Convergencia de los hiperparámetros.
 
-Justificacion: Contratos de datos y validacion de esquema previenen rupturas.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> El overfitting ocurre cuando el algoritmo es tan complejo que "memoriza el ruido" de la muestra de entrenamiento. Para solucionarlo, se aplican técnicas de regularización (ej. limitar la profundidad del árbol) o se usan métodos de ensamble (Random Forest).
 </details>
 
+8. En analítica avanzada, la técnica de Procesamiento de Lenguaje Natural (NLP - Natural Language Processing) se utiliza en la Contraloría principalmente para:
 
-Pregunta 8.
-Piden un pronostico mensual pero solo hay tres meses de datos.
+A) Calcular la tasa de depreciación de los vehículos.
 
-Que haces?
+B) Ordenar alfabéticamente los nombres de los alcaldes.
 
-- A) Pronosticar igual
-- B) Advertir insuficiencia y proponer escenarios o datos externos
-- C) Interpolar al año
-- D) Duplicar valores
-<details><summary>Mostrar respuesta</summary>
+C) Analizar e interpretar automáticamente miles de folios de texto no estructurado (como observaciones en minutas, objetos de contratos, y quejas ciudadanas) para extraer entidades nombradas, tópicos o sentimientos sin intervención humana manual.
 
-Respuesta correcta: B
+D) Comprimir imágenes de alta resolución a formato PDF.
 
-Justificacion: Se requiere base historica; se proponen alternativas responsables.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
+
+<i>Justificación:</i> El NLP (una rama de la IA) permite a las computadoras entender el lenguaje humano. Técnicas como Topic Modeling o extracción de entidades (NER) son fundamentales para minar textos de contratos o audios transcritos y hallar redes de corrupción ocultas en el lenguaje.
 </details>
 
+9. Al preparar una base de datos de contratistas, el Científico de Datos nota que la variable "Tipo de Empresa" contiene texto: "SAS", "Ltda", "SA". Los algoritmos matemáticos no entienden texto. ¿Qué técnica debe aplicar para transformar estos datos categóricos a formato numérico sin asumir un orden jerárquico inexistente?
 
-Pregunta 9.
-Duplicados exactos y casi-duplicados en beneficiarios.
+A) One-Hot Encoding (Variables Dummys), creando una columna binaria (0/1) para cada tipo de empresa.
 
-Que haces?
+B) Asignarles los números 1, 2 y 3 (Label Encoding), lo que hará que el algoritmo crea que una SA vale el triple que una SAS.
 
-- A) Ignorar
-- B) Ejecutar deduplicacion (claves compuestas, distancia fuzzy) con bitacora
-- C) Eliminar todo
-- D) Pedir carta
-<details><summary>Mostrar respuesta</summary>
+C) Eliminar la columna porque el texto no sirve para analítica predictiva.
 
-Respuesta correcta: B
+D) Encriptar las palabras con protocolo SHA-256.
 
-Justificacion: La calidad de datos exige deduplicar con registro de cambios.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
+
+<i>Justificación:</i> El One-Hot Encoding es la técnica estándar para variables categóricas nominales (sin orden intrínseco). Crea nuevas columnas donde la presencia del atributo se marca con 1 y la ausencia con 0, permitiendo que la matemática matricial del algoritmo funcione correctamente.
 </details>
 
+10. Para evaluar si la inversión en un programa de seguridad ciudadana realmente redujo el índice de criminalidad, un estadístico encuentra una alta correlación inversa (cuando la inversión sube, el crimen baja). ¿Es suficiente esta correlación matemática para que la CGR dictamine que el programa fue un éxito causal?
 
-Pregunta 10.
-Datos personales sensibles aparecen en un dataset de uso analitico abierto.
+A) Sí, en estadística pura, la correlación es sinónimo exacto de causalidad empírica.
 
-Que haces?
+B) No. "Correlación no implica causalidad". Podrían existir variables de confusión (ej. cambios en la ley, desempleo, otra política pública paralela) que realmente causaron la reducción. Se requieren modelos de inferencia causal o grupos de control.
 
-- A) Publicar
-- B) Anonimizar/Testar y aplicar controles de acceso; registrar riesgo
-- C) Pedir permiso general
-- D) Poner contraseña
-<details><summary>Mostrar respuesta</summary>
+C) Sí, siempre y cuando el coeficiente de correlación de Pearson sea superior a 0.5.
 
-Respuesta correcta: B
+D) No, porque los delitos no se pueden medir en términos financieros.
 
-Justificacion: Se protege la privacidad mediante tecnicas y controles.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> Un concepto pilar de la analítica es que dos fenómenos que ocurren al mismo tiempo (correlación) no significan que uno cause el otro (causalidad). En evaluación de políticas públicas, para probar impacto, se usan diseños cuasiexperimentales (como Diferencias en Diferencias o Propensity Score Matching).
 </details>
 
+11. Tienes un dataset con 2.000 columnas (variables) relacionadas con las finanzas territoriales. Entrenar un modelo con tantas variables es computacionalmente inviable e introduce ruido. ¿Qué técnica No Supervisada utilizarías para reducir el número de variables reteniendo la mayor parte de la información (varianza) original?
 
-Pregunta 11.
-Un compañero propone evaluar el modelo solo con accuracy en clase desbalanceada.
+A) Borrar aleatoriamente el 80% de las columnas.
 
-Que haces?
+B) Análisis de Componentes Principales (PCA).
 
-- A) Aceptar
-- B) Usar precision, recall, F1 y curva PR; justificar
-- C) Solo AUC
-- D) Solo matriz de confusion
-<details><summary>Mostrar respuesta</summary>
+C) Regresión Logística Múltiple.
 
-Respuesta correcta: B
+D) Limpieza por imputación de la media.
 
-Justificacion: Metricas adecuadas evitan conclusiones engañosas.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> El Análisis de Componentes Principales (PCA) es una técnica matemática de reducción de dimensionalidad. Transforma cientos de variables correlacionadas en un número menor de variables nuevas incorrelacionadas (componentes principales) que retienen la máxima varianza de los datos originales.
 </details>
 
+12. En la validación de un modelo de Machine Learning, el enfoque de "Validación Cruzada de K-Pliegues" (K-Fold Cross Validation) consiste en:
 
-Pregunta 12.
-Solicitan unir pagos y beneficiarios con llaves inconsistentes por espacios y mayusculas.
+A) Dividir el dataset aleatoriamente en K subconjuntos, entrenar el modelo K veces (usando cada vez un subconjunto distinto para validar y el resto para entrenar) y promediar los resultados para asegurar que el modelo no dependa de cómo se partió la data.
 
-Que haces?
+B) Validar que el modelo fue entrenado en computadores cruzados en red.
 
-- A) Join directo
-- B) Estandarizar (trim, casefold) y validar cobertura del match
-- C) Eliminar filas sin match
-- D) Usar ID secuencial
-<details><summary>Mostrar respuesta</summary>
+C) Evaluar el modelo usando exclusivamente la validación de los auditores externos.
 
-Respuesta correcta: B
+D) Dividir los datos en K partes y borrar la parte más pequeña para limpiar ruido.
 
-Justificacion: Normalizar llaves mejora la calidad del join.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
+
+<i>Justificación:</i> La validación cruzada es crucial para garantizar que el rendimiento del modelo sea robusto y generalizable. Al iterar la división de entrenamiento/prueba múltiples veces, se descarta que el modelo sea bueno por simple "suerte" en la partición inicial de los datos.
 </details>
 
+13. El equipo de control interno de la CGR detecta que un modelo de IA implementado hace dos años para calcular el riesgo de los contratos ahora está fallando y emitiendo falsas alarmas. Los expertos determinan que hubo "Data Drift" (Deriva de los datos). Esto significa que:
 
-Pregunta 13.
-Modelo en produccion degrada su performance tras cambios de politica.
+A) Los hackers alteraron el código base de la IA.
 
-Que haces?
+B) La estructura o comportamiento subyacente de la realidad cambió (ej. una nueva ley de contratación o inflación post-pandemia) haciendo que los datos actuales tengan una distribución estadística distinta a los datos con los que el modelo aprendió en el pasado. Se requiere reentrenamiento.
 
-- A) Ignorar
-- B) Implementar monitoreo de deriva de datos/etiquetas y reentrenar
-- C) Bajar umbral
-- D) Detener logs
-<details><summary>Mostrar respuesta</summary>
+C) El disco duro del servidor se desalineó magnéticamente.
 
-Respuesta correcta: B
+D) El modelo procesó datos en un idioma distinto al programado.
 
-Justificacion: El monitoreo y el reentrenamiento gestionan la deriva.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> Los modelos de IA no son eternos. El Data Drift (o Concept Drift) es el fenómeno donde la realidad cambia (nuevas regulaciones, crisis económicas) y las reglas que el modelo aprendió en el pasado ya no aplican. El ciclo de vida de ML exige monitoreo y reentrenamiento continuo (MLOps).
 </details>
 
+14. A partir de una tabla de pagos que solo contiene "Identificación" y "Fecha de pago", el científico de datos programa código para crear nuevas columnas como: "Días desde el último pago", "Promedio pagado en los últimos 3 meses" y "¿Es fin de mes?". Este proceso crítico en analítica predictiva se denomina:
 
-Pregunta 14.
-Solicitan un score de riesgo pero no existe etiqueta historica.
+A) Minería de texto.
 
-Que haces?
+B) Scraping de datos.
 
-- A) Modelar igual
-- B) Proponer enfoque semisupervisado/reglas y plan para construir etiquetas
-- C) Aleatorio
-- D) Eliminar variables
-<details><summary>Mostrar respuesta</summary>
+C) Ingeniería de Características (Feature Engineering), que busca extraer información oculta y conocimiento de negocio a partir de variables crudas para ayudar al algoritmo a encontrar patrones complejos.
 
-Respuesta correcta: B
+D) Falsificación de datos administrativos.
 
-Justificacion: Sin etiqueta se usan metodos alternos y se planifica obtencion de labels.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
+
+<i>Justificación:</i> El Feature Engineering es el arte de crear variables nuevas y más predictivas combinando o transformando los datos originales. Un buen algoritmo con malas variables falla; un algoritmo simple con excelente ingeniería de características suele ganar competiciones y hallar fraudes.
 </details>
 
+15. Un analista está revisando datos de contratación estatal para analítica descriptiva. Encuentra que el 15% de los registros en la columna "Fecha de Nacimiento del Representante Legal" están en blanco. Si elimina esas filas completas, perderá el 15% del presupuesto evaluado. ¿Cuál es la técnica analítica recomendada?
 
-Pregunta 15.
-El jefe pide publicar los datos abiertos sin diccionario ni licencia.
+A) Reemplazar todos los blancos con la fecha del día de la auditoría.
 
-Que haces?
+B) Imputación de datos (Data Imputation), que puede ser usando la mediana/moda de edades, creando un modelo predictivo para estimar la edad faltante, o si no es crítica, simplemente asignar un valor de "Desconocido" sin perder la fila del contrato.
 
-- A) Publicar ya
-- B) Publicar con diccionario, metadatos, licencia y versionado
-- C) Solo CSV
-- D) PDF
-<details><summary>Mostrar respuesta</summary>
+C) Eliminar los registros de todos modos porque los datos vacíos rompen las bases SQL.
 
-Respuesta correcta: B
+D) Borrar toda la columna de fecha de nacimiento y también la cédula por si acaso.
 
-Justificacion: Los datos abiertos requieren metadatos, licencia y versionado.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> La eliminación de registros con datos faltantes (Listwise deletion) es el último recurso porque se pierde información valiosa (el valor del contrato, el objeto). La imputación permite salvar el registro utilizando técnicas estadísticas que estiman el valor faltante minimizando el sesgo.
 </details>
-
-
-Pregunta 16.
-Se necesita reproducibilidad del analisis en auditorias futuras.
-
-Que haces?
-
-- A) Guardar solo Excel final
-- B) Versionar codigo/datos, usar notebooks parametrizados y seeds
-- C) Guardar capturas de pantalla
-- D) Enviar por correo
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: La reproducibilidad exige versionado y parametrizacion.
-
-</details>
-
-
-Pregunta 17.
-Columnas de fecha tienen formatos mixtos y zonas horarias distintas.
-
-Que haces?
-
-- A) Convertir a texto
-- B) Normalizar a ISO 8601 y zona definida; documentar
-- C) Usar dia/mes segun vista
-- D) Eliminar fechas
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: Estandarizar fechas evita errores en series y joins.
-
-</details>
-
-
-Pregunta 18.
-Solicitan comparar costos entre entidades con tamaños muy distintos.
-
-Que haces?
-
-- A) Usar totales
-- B) Normalizar por indicadores (per capita, por contrato) y reportar intervalos
-- C) Ordenar por nombre
-- D) Solo promedio
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: La normalizacion permite comparaciones justas y replicables.
-
-</details>
-
-
-Pregunta 19.
-Un analista usa datos de entrenamiento en el ajuste de hiperparametros sin validacion separada.
-
-Que haces?
-
-- A) Continuar
-- B) Usar validacion cruzada o holdout; registrar pipeline de tuning
-- C) Probar en el mismo set
-- D) Ajustar a ojo
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: Separar entrenamiento/validacion evita sobreajuste.
-
-</details>
-
-
-Pregunta 20.
-Se requiere integrar logs de sistemas con distintos codigos de caracter y separadores.
-
-Que haces?
-
-- A) Importar como venga
-- B) Estandarizar encoding (UTF-8) y delimitadores; probar con muestras y validaciones
-- C) Cargar a mano
-- D) Convertir a imagen
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: Estandarizar formatos facilita ETL robusto.
-
-</details>
-

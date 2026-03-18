@@ -1,362 +1,256 @@
-# Tema 2 - CGR y Control Fiscal (20 casos)
+# Tema 2: Estructura, Funcionamiento de la CGR y Conceptos Básicos de Control Fiscal
 
-Pregunta 1.
-Un contrato de obra registra pagos del 80% mientras el avance fisico medido en campo es del 40%. El supervisor afirma que es normal porque la obra arranca mas lento.
+1. Durante una visita de campo a un proyecto de vivienda de interés social, el auditor de la CGR constata que se ha pagado el 80% del valor del contrato, pero el avance físico real de la obra es apenas del 40%. El supervisor del contrato argumenta que los pagos anticipados se hicieron para "asegurar los materiales" ante la inflación. ¿Qué acción de control fiscal debe tomar el auditor frente a este escenario?
 
-Que haces?
+A) Consolidar un hallazgo administrativo con presunta incidencia fiscal, cuantificar el posible detrimento por el desfase financiero-físico y exigir los soportes técnicos y financieros correspondientes.
 
-- A) Esperar a que iguale sin mas pruebas
-- B) Registrar hallazgo, cuantificar posible detrimento y exigir soportes
-- C) Publicar el caso en redes para presionar
-- D) Archivar por tratarse de infraestructura
+B) Ordenar la suspensión inmediata de los desembolsos pendientes hasta que el contratista nivele el avance físico de la obra.
 
-<details><summary>Mostrar respuesta</summary>
+C) Aceptar la justificación del supervisor, ya que la gestión de riesgos de mercado (inflación) justifica la flexibilización de los pagos en contratos de obra.
 
-Respuesta correcta: B
+D) Archivar la observación, pues los contratos de infraestructura suelen tener inicios lentos y la CGR solo evalúa el estado final tras la liquidación.
 
-Justificacion: La brecha fisico/financiera es indicador de riesgo fiscal; se cuantifica y se soporta tecnicamente.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
+
+<i>Justificación:</i> La desproporción injustificada entre el avance financiero y físico constituye un indicador clave de riesgo y potencial daño patrimonial. La CGR no suspende pagos (no coadministra), pero debe configurar el hallazgo y cuantificar el posible detrimento para iniciar las acciones de responsabilidad si no se subsana.
 </details>
 
+2. En el marco del control concomitante y preventivo, la CGR detecta a través de analítica de datos que una entidad nacional está a punto de adjudicar una licitación de tecnología con precios unitarios que superan en un 300% el promedio del mercado. La entidad auditada argumenta que necesita la autorización de la CGR para detener el proceso. ¿Cómo opera la competencia de la Contraloría aquí?
 
-Pregunta 2.
-En control concomitante identificas una compra proyectada con precios por encima del mercado. La entidad pide que la CGR apruebe la adquisicion por urgencia.
+A) La CGR debe firmar un acta de rechazo técnico que bloquee la adjudicación en el sistema SECOP II de forma automática.
 
-Que haces?
+B) La CGR interviene asumiendo temporalmente el rol de ordenador del gasto para declarar desierta la licitación y proteger los recursos.
 
-- A) Aprobar para no frenar la gestion
-- B) Emitir alerta temprana con evidencia de sobreprecio y recomendaciones
-- C) Ordenar cancelar el proceso
-- D) Dar consejo verbal sin registro
+C) La CGR emite una alerta temprana fundamentada técnica y financieramente sobre el sobrecosto, dejando claro que la decisión de continuar o suspender el proceso es responsabilidad exclusiva del gestor fiscal.
 
-<details><summary>Mostrar respuesta</summary>
+D) La CGR no puede pronunciarse sobre sobrecostos hasta que no se haya firmado el contrato y desembolsado el dinero, limitándose al control posterior.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: El concomitante previene sin coadministrar; se emiten alertas y recomendaciones formales.
 
+<i>Justificación:</i> El Acto Legislativo 04 de 2019 establece que el control concomitante y preventivo es no vinculante y no implica coadministración. La CGR emite advertencias o alertas oportunas, pero el ordenador del gasto conserva total autonomía (y responsabilidad) sobre sus decisiones.
 </details>
 
+3. La Oficina de Control Interno de una Gobernación le entrega al equipo auditor de la CGR un informe detallado donde ellos mismos detectaron y documentaron varias irregularidades en un contrato de suministros. El Gobernador solicita que la CGR tome ese informe como definitivo y cierre la auditoría externa para ahorrar tiempo. ¿Es procedente la solicitud del Gobernador?
 
-Pregunta 3.
-La entidad presenta un plan de mejoramiento sin responsables, sin fechas y sin indicadores verificables.
+A) Sí, siempre que el jefe de control interno de la Gobernación sea un contador público titulado.
 
-Que haces?
+B) Sí, por el principio de colaboración armónica entre las entidades del Estado, la CGR debe validar el informe interno y dar por concluida la revisión.
 
-- A) Aceptar por buena fe
-- B) Exigir responsables, metas, cronograma e indicadores y hacer seguimiento
-- C) Sustituir por comunicado
-- D) Esperar la siguiente vigencia
+C) No, el informe de control interno debe desestimarse totalmente, pues al ser elaborado por empleados de la gobernación carece de validez legal.
 
-<details><summary>Mostrar respuesta</summary>
+D) No, el control fiscal externo es indelegable. El informe de control interno es un insumo valioso y complementario, pero no sustituye la auditoría objetiva e independiente que debe ejecutar la CGR.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: D</b>.
 
-Justificacion: El plan de mejoramiento debe ser concreto y verificable para cerrar brechas.
 
+<i>Justificación:</i> La CGR ejerce el control fiscal externo, el cual es exclusivo e indelegable. Los hallazgos del Sistema de Control Interno (SCI) de la entidad auditada son una fuente de información primaria para el auditor, pero no reemplazan el dictamen que la Contraloría debe emitir de manera independiente.
 </details>
 
+4. Al evaluar la gestión de una entidad territorial, la CGR encuentra que los resultados obtenidos en un programa de vacunación cumplieron con todas las metas de cobertura trazadas. Sin embargo, para lograrlo, la entidad gastó el triple de los recursos presupuestados debido a deficiencias logísticas severas. Según los principios del control fiscal, esta gestión:
 
-Pregunta 4.
-El auditor define el muestreo por conveniencia (expedientes cercanos), para ahorrar tiempo.
+A) Falla en el principio de eficacia, pero cumple con el principio de economía.
 
-Que haces?
+B) Falla en el principio de eficiencia, ya que, aunque fue eficaz (logró la meta), no optimizó la relación entre los recursos utilizados y los resultados obtenidos.
 
-- A) Valido si ahorra tiempo
-- B) El muestreo debe basarse en riesgo y materialidad, con justificacion tecnica
-- C) Siempre al azar
-- D) Siempre censal
+C) Es completamente exitosa porque en la salud pública el principio de equidad prima sobre cualquier costo económico.
 
-<details><summary>Mostrar respuesta</summary>
+D) No puede ser auditada por la CGR, dado que las metas de cobertura fueron avaladas por el Ministerio de Salud.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: El alcance y el muestreo deben responder a riesgo y materialidad.
 
+<i>Justificación:</i> El principio de Eficiencia evalúa la asignación y uso óptimo de los recursos para alcanzar un resultado. El principio de Eficacia mide el grado de cumplimiento de los objetivos (que sí se logró). Gastar en exceso por mala logística viola el principio de eficiencia en la gestión fiscal.
 </details>
 
+5. El equipo de la CGR emitió tres alertas tempranas a lo largo del año advirtiendo sobre la inminente caducidad de unos medicamentos en las bodegas de un hospital público. El gerente del hospital ignoró las alertas sistemáticamente y los medicamentos finalmente se perdieron. En la fase de control posterior, ¿qué implicación tiene el haber ignorado dichas alertas?
 
-Pregunta 5.
-Se detectan anticipos pagados sin legalizacion ni garantias suficientes que cubran los riesgos del contrato.
+A) Agrava la responsabilidad del gestor fiscal, pues las alertas documentadas demuestran que conocía el riesgo, omitió su deber de mitigación y permitió que se materializara el daño al patrimonio.
 
-Que haces?
+B) Ninguna, porque al ser las alertas preventivas de carácter no vinculante, el gerente no estaba obligado a leerlas ni a actuar en consecuencia.
 
-- A) Normal si el contratista es reconocido
-- B) Exigir legalizacion y verificar coberturas de garantias
-- C) Basta con promesa de legalizar
-- D) No es objeto de auditoria
+C) La CGR asume el 50% de la responsabilidad por no haber decomisado los medicamentos a tiempo tras emitir la primera alerta.
 
-<details><summary>Mostrar respuesta</summary>
+D) Anula la posibilidad de abrir un proceso fiscal, pues las alertas agotaron la competencia de la CGR sobre esos hechos específicos.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
-Justificacion: Los anticipos exigen legalizacion conforme al contrato y garantias.
 
+<i>Justificación:</i> Aunque la alerta preventiva no obliga a tomar una decisión específica, ignorarla sin justificación técnica y permitir que el riesgo advertido cause un detrimento patrimonial, constituye un agravante (dolo o culpa grave) en el posterior proceso de responsabilidad fiscal.
 </details>
 
+6. Una empresa de servicios públicos cuenta con una composición accionaria donde el Estado posee el 15% y los inversionistas privados el 85%. Los directivos privados le impiden el ingreso a los auditores de la CGR argumentando que, al ser de mayoría privada, la empresa está exenta de control fiscal. ¿Cuál es el postulado jurídico correcto?
 
-Pregunta 6.
-La entidad fracciona objetos contractuales similares para evitar un proceso de seleccion objetiva de mayor exigencia.
+A) La CGR debe pedir permiso a la Superintendencia de Sociedades para poder ingresar a las instalaciones privadas.
 
-Que haces?
+B) Los directivos tienen razón; la CGR solo puede auditar entidades donde la participación estatal sea superior al 50%.
 
-- A) Practica valida por celeridad
-- B) Indicio de evasion del procedimiento; documentar y cuantificar si hay detrimento
-- C) No afecta el control
-- D) Mejora la competencia
+C) La CGR carece de competencia y debe trasladar el caso a una firma de revisoría fiscal externa pagada por la empresa.
 
-<details><summary>Mostrar respuesta</summary>
+D) La CGR tiene plena competencia para ejercer el control fiscal sobre la entidad, pero este será excepcional y se limitará estrictamente al porcentaje de los recursos o participación estatal (15%).
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: D</b>.
 
-Justificacion: El fraccionamiento vulnera planeacion y seleccion objetiva.
 
+<i>Justificación:</i> La Constitución y la ley establecen que la Contraloría ejerce vigilancia sobre el manejo de fondos o bienes de la Nación en todos los niveles, incluyendo a los particulares y empresas mixtas, pero su control se restringe proporcionalmente a la porción de los recursos o capital público involucrado.
 </details>
 
+7. Tras una auditoría regular, la entidad auditada formula un Plan de Mejoramiento para subsanar los hallazgos administrativos. Al revisar dicho plan, el auditor nota que las acciones propuestas son genéricas (ej. "hacer reuniones"), no tienen fechas límite y carecen de indicadores de cumplimiento. ¿Cuál es la actuación adecuada del auditor?
 
-Pregunta 7.
-Los precios pactados se apartan significativamente de referencias tecnicas y de mercado disponibles.
+A) Aprobar el plan temporalmente para no retrasar el cronograma de la auditoría y pedir que lo arreglen el próximo año.
 
-Que haces?
+B) Modificar el plan de mejoramiento él mismo, agregando fechas e indicadores desde su oficina y enviándolo firmado al representante legal.
 
-- A) Irrelevante si hay disponibilidad presupuestal
-- B) Analizar sobrecostos mediante comparativos y justificar tecnicamente
-- C) Cambiar proveedor sin estudio
-- D) Pedir certificacion del contratista
+C) Rechazar el plan de mejoramiento, exigir que se estructuren acciones concretas, con responsables directos, cronogramas verificables e indicadores medibles que garanticen la corrección de las causas raíz.
 
-<details><summary>Mostrar respuesta</summary>
+D) Sancionar fiscalmente de inmediato al jefe de planeación de la entidad por ineptitud administrativa.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: Las referencias tecnicas y de mercado son insumo para evaluar economia del gasto.
 
+<i>Justificación:</i> Un Plan de Mejoramiento es la herramienta principal mediante la cual la entidad se compromete a corregir deficiencias. Si no es medible, específico y con tiempos definidos (metodología SMART), el auditor debe rechazarlo o requerir ajustes sustanciales para que sea susceptible de seguimiento efectivo.
 </details>
 
+8. En la revisión de un contrato de consultoría, el auditor determina que los entregables fueron defectuosos y no cumplieron el objeto contractual, configurando un daño patrimonial. Adicionalmente, descubre que el supervisor del contrato exigía dádivas (dinero) al contratista a cambio de aprobar los pagos. Frente a esta situación integral, ¿qué debe hacer el auditor?
 
-Pregunta 8.
-El gestor fiscal no presenta rendicion de cuenta en el termino previsto, afectando la oportunidad del control.
+A) Intentar mediar una conciliación entre el contratista y el supervisor para que devuelvan el dinero del contrato y no escalar el problema.
 
-Que haces?
+B) Configurar el hallazgo fiscal por el daño patrimonial originado en los entregables, y de manera inmediata, compulsar copias (trasladar el hallazgo) con presunta incidencia disciplinaria a la Procuraduría y penal a la Fiscalía por la solicitud de dádivas.
 
-- A) No pasa nada
-- B) Requerir la rendicion y continuar pruebas, evaluando reincidencia
-- C) Cerrar auditoria
-- D) Solo publicar un llamado de atencion
+C) Abrir directamente un proceso penal desde la CGR contra el supervisor e imponerle una pena de prisión domiciliaria.
 
-<details><summary>Mostrar respuesta</summary>
+D) Ignorar el tema de las dádivas porque la CGR solo revisa facturas y balances, no la conducta moral de los funcionarios.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: La rendicion es deber del gestor; su incumplimiento puede tener consecuencias.
 
+<i>Justificación:</i> El control fiscal es integral. Cuando el auditor identifica hechos que superan la competencia fiscal (como la corrupción o faltas a los deberes de servidor público), tiene la obligación legal de trasladar dichos hallazgos a las autoridades competentes (incidencia disciplinaria a Procuraduría/Oficinas de Control Interno Disciplinario, e incidencia penal a la Fiscalía).
 </details>
 
+9. Al evaluar la política pública de vivienda de un municipio bajo el principio de Equidad del control fiscal, el auditor debe verificar principalmente que:
 
-Pregunta 9.
-Analisis de datos revela patron de oferentes que se alternan ganando con precios similares y diferencias minimas, lo que sugiere colusion.
+A) Todos los contratistas del municipio hayan recibido exactamente el mismo porcentaje de anticipo, sin importar el tamaño de la obra.
 
-Que haces?
+B) La administración municipal haya reducido su nómina de empleados para trasladar esos sueldos a la construcción de casas.
 
-- A) Normal por afinidad del mercado
-- B) Analizar patrones para colusion (turnos, dispersion de precios) y remitir si procede
-- C) Ignorar si ofrecen precios bajos
-- D) Pedir carta de buena fe
+C) El diseño e implementación de la política pública haya identificado y beneficiado efectivamente a las poblaciones más vulnerables, distribuyendo los recursos de manera que reduzcan brechas sociales comprobables.
 
-<details><summary>Mostrar respuesta</summary>
+D) El presupuesto ejecutado sea igualitario, es decir, que cada barrio del municipio reciba exactamente la misma cantidad de dinero al año.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: La colusion es riesgo relevante; el analisis transaccional puede evidenciar indicios.
 
+<i>Justificación:</i> En el marco del control fiscal, el principio de Equidad examina cómo las políticas y el gasto público impactan la distribución del ingreso y la riqueza, buscando que la gestión del Estado beneficie prioritariamente a los sectores más necesitados o vulnerables de la sociedad, no simplemente repartir en partes matemáticas iguales.
 </details>
 
+10. Un funcionario de la entidad auditada, encargado de recaudar impuestos locales, omite el cobro de obligaciones tributarias que estaban próximas a prescribir, favoreciendo a grandes contribuyentes y causando la pérdida definitiva de esos ingresos para el municipio. ¿Este hecho es materia de control fiscal?
 
-Pregunta 10.
-En visita de obra, el contratista impide el acceso del equipo auditor al frente de trabajo alegando seguridad industrial.
+A) No, la CGR solo audita el dinero que "sale" (gastos), no el dinero que "deja de entrar" (ingresos no recaudados).
 
-Que haces?
+B) Sí, pero el funcionario solo debe responder con una amonestación verbal por descuido involuntario.
 
-- A) Abortar la auditoria
-- B) Coordinar acceso seguro, dejar constancia y escalar si persiste
-- C) Esperar cambio de clima
-- D) Pedir fotos al contratista
+C) Sí. La gestión fiscal abarca tanto la adecuada ejecución del gasto como el diligente recaudo de los ingresos públicos. La omisión antijurídica en el recaudo que causa prescripción configura un presunto detrimento patrimonial.
 
-<details><summary>Mostrar respuesta</summary>
+D) No, las deudas tributarias prescritas se compensan automáticamente con el Ministerio de Hacienda, por lo que no hay daño.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: El acceso fisico es esencial; obstrucciones deben documentarse y escalarse.
 
+<i>Justificación:</i> La gestión fiscal comprende la administración, recaudo y disposición de recursos públicos. La omisión o negligencia en el cobro de dineros a favor del Estado (como impuestos o multas) que conlleva a la prescripción de la deuda, genera un daño al patrimonio público imputable al funcionario responsable del recaudo.
 </details>
 
+11. ¿Cuál es el objetivo principal del resarcimiento en el marco del proceso de responsabilidad fiscal que adelanta la Contraloría General de la República?
 
-Pregunta 11.
-Antes de emitir el informe, detectas inconsistencias numericas entre anexos y el cuerpo principal.
+A) Enviar a la cárcel a los servidores públicos que hayan cometido actos de peculado o concusión.
 
-Que haces?
+B) Multar a las empresas privadas para incrementar los ingresos corrientes de la Contraloría.
 
-- A) Publicar para no retrasar
-- B) Aplicar control de calidad, corregir y documentar cambios antes de emitir
-- C) Eliminar anexos
-- D) Ajustar montos al promedio
+C) Destituir e inhabilitar de por vida a los funcionarios de elección popular que incumplan su plan de gobierno.
 
-<details><summary>Mostrar respuesta</summary>
+D) Lograr la reparación o compensación integral del daño causado al patrimonio público, devolviendo al erario los recursos desviados, perdidos o mal administrados.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: D</b>.
 
-Justificacion: La calidad del informe exige correcciones con trazabilidad antes de la emision.
 
+<i>Justificación:</i> A diferencia de la acción penal (que castiga el delito) o la disciplinaria (que castiga la conducta), la acción fiscal tiene un carácter netamente reparatorio y resarcitorio: busca que quien le hizo un daño patrimonial al Estado lo pague y el dinero regrese al tesoro público.
 </details>
 
+12. Durante una auditoría financiera y de gestión, el auditor nota que un supervisor aceptó bienes con especificaciones técnicas muy inferiores a las contratadas, pero el proveedor facturó el precio como si fueran de máxima calidad. ¿Qué elemento indispensable debe establecer el auditor para configurar el presunto hallazgo fiscal?
 
-Pregunta 12.
-Actas de recibido conformes reportan entregas completas de alimentos, pero evidencias en sitio muestran raciones incompletas.
+A) La existencia de un daño patrimonial cuantificable (la diferencia de valor entre lo pagado y lo entregado) derivado de una conducta antijurídica o gestión fiscal ineficiente.
 
-Que haces?
+B) Que el supervisor haya firmado una confesión notariada aceptando su culpa.
 
-- A) Confiar en actas firmadas
-- B) Registrar hallazgo con evidencia fisica/fotografica y requerir explicaciones al supervisor
-- C) Conciliar verbalmente con el contratista
-- D) Pedir disculpas al proveedor
+C) La autorización previa del Juez Administrativo del Circuito.
 
-<details><summary>Mostrar respuesta</summary>
+D) Que el proveedor esté registrado como reincidente en la Cámara de Comercio.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
-Justificacion: Las actas deben reflejar la realidad; divergencias sugieren posible dano.
 
+<i>Justificación:</i> Para que exista responsabilidad fiscal deben configurarse tres elementos: 1) Una conducta dolosa o gravemente culposa en la gestión fiscal, 2) un daño patrimonial al Estado demostrable y cuantificable, y 3) un nexo de causalidad entre la conducta y el daño.
 </details>
 
+13. Un alcalde, para solucionar un problema urgente de transporte escolar, contrata "a dedo" (sin licitación) a una empresa. La Contraloría verifica y constata que, aunque el procedimiento de contratación violó estatutos administrativos, los precios cobrados fueron justos, los buses eran excelentes y el servicio se prestó a satisfacción sin que se perdiera un solo peso del municipio. ¿Hay lugar a un hallazgo fiscal?
 
-Pregunta 13.
-Se pagaron obras adicionales sin acta de modificacion ni disponibilidad presupuestal previa.
+A) Sí, porque contratar sin licitación genera automáticamente una multa fiscal del 50% del valor del contrato.
 
-Que haces?
+B) No hay hallazgo con incidencia fiscal, pues no existe daño o detrimento al patrimonio público; sin embargo, se debe configurar un hallazgo con presunta incidencia disciplinaria por violar los principios de la contratación estatal.
 
-- A) Valido por peticion de la comunidad
-- B) Riesgo fiscal y de legalidad; documentar y cuantificar
-- C) No afecta el control
-- D) Se regulariza despues
+C) Sí, se debe obligar al contratista a devolver la totalidad del dinero porque el contrato es nulo de pleno derecho.
 
-<details><summary>Mostrar respuesta</summary>
+D) No hay hallazgo de ningún tipo, pues la urgencia escolar perdona cualquier irregularidad de forma en Colombia.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: Las modificaciones exigen soportes y disponibilidad; de lo contrario, hay riesgo de detrimento.
 
+<i>Justificación:</i> Si no hay pérdida económica (daño patrimonial), no hay responsabilidad fiscal, por más irregular que haya sido el trámite administrativo. No obstante, violar la ley de contratación es una falta grave a los deberes del funcionario, por lo que la CGR traslada el hallazgo administrativo a la Procuraduría (incidencia disciplinaria).
 </details>
 
+14. En el marco del control fiscal participativo, la CGR recibe una denuncia ciudadana bien sustentada sobre una obra fantasma (pagada pero no construida). El equipo de Participación Ciudadana de la CGR debe:
 
-Pregunta 14.
-Una entidad adquiere software sin licencias validas ni soporte tecnico, alegando que asi ahorra costos.
+A) Archivarla si el ciudadano no tiene un título profesional en ingeniería civil.
 
-Que haces?
+B) Trasladar la responsabilidad de la investigación al veedor ciudadano para que él mismo recopile las pruebas físicas.
 
-- A) Ahorra costos y es aceptable
-- B) Riesgo legal/tecnico; verificar cumplimiento y sobrecostos indirectos
-- C) No es objeto del control
-- D) Resolver con donacion
+C) Publicar inmediatamente en periódicos locales la identidad del contratista para generar presión mediática antes de revisar el contrato.
 
-<details><summary>Mostrar respuesta</summary>
+D) Acoger la denuncia, proteger la identidad del ciudadano si lo requiere, e incorporarla como insumo prioritario para iniciar una actuación especial de control fiscal o incluirla en la auditoría respectiva.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: D</b>.
 
-Justificacion: La legalidad del activo afecta la economia y eficacia del gasto.
 
+<i>Justificación:</i> La participación ciudadana es un eje misional de la CGR. Las denuncias ciudadanas fundamentadas deben tramitarse oficiosamente e integrarse al proceso de vigilancia fiscal, garantizando la retroalimentación al denunciante y la protección de sus datos si las circunstancias lo exigen.
 </details>
 
+15. Se habla de que una entidad auditada ha logrado un "Beneficio de Auditoría" cuando, durante el transcurso de la actuación de la CGR (y gracias a sus observaciones previas o visitas), la entidad reacciona y:
 
-Pregunta 15.
-Cruces contables revelan pagos repetidos a un mismo proveedor con igual numero de factura.
+A) Contrata a un bufete de abogados externos para demandar a la Contraloría.
 
-Que haces?
+B) Logra ocultar exitosamente los documentos que evidencian el sobrecosto antes de que el auditor los copie.
 
-- A) Optimiza el sistema
-- B) Indicio de duplicidad; cruzar bases y estimar dano
-- C) Ignorar si el monto es bajo
-- D) Pedir carta de no repeticion
+C) Corrige las irregularidades, recupera dineros o bienes desviados, o implementa mejoras sustanciales cuantificables que resarcen o evitan un daño patrimonial antes de que finalice el proceso auditor.
 
-<details><summary>Mostrar respuesta</summary>
+D) Publica un informe de sostenibilidad ambiental en su página web sin relación al hallazgo.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: La duplicidad es senal de posible detrimento; requiere depuracion y cuantificacion.
 
+<i>Justificación:</i> El "Beneficio del Control Fiscal" (o beneficio de auditoría) es el impacto positivo y cuantificable que genera la acción de la CGR cuando el sujeto de control, motivado por la auditoría en curso, adopta medidas correctivas inmediatas que recuperan recursos o detienen una pérdida patrimonial, demostrando la eficacia del ejercicio preventivo y de vigilancia.
 </details>
-
-
-Pregunta 16.
-El supervisor de un proyecto de regalias tambien figura como contratista en otro componente del mismo proyecto.
-
-Que haces?
-
-- A) No afecta la imparcialidad
-- B) Posible conflicto de interes; documentar y pedir medidas de mitigacion
-- C) Validar por encuesta
-- D) Omitir para no incomodar
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: Los conflictos comprometen imparcialidad y deben declararse y mitigarse.
-
-</details>
-
-
-Pregunta 17.
-La justificacion de precios se basa en una unica cotizacion sin comparativos.
-
-Que haces?
-
-- A) Suficiente si esta en PDF
-- B) Insuficiente; requerir comparativos/estudios o dejar hallazgo por falta de analisis de mercado
-- C) Aceptar por urgencia
-- D) Pedir carta del proveedor
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: El analisis de mercado debe ser sustantivo, no meramente formal.
-
-</details>
-
-
-Pregunta 18.
-Emitiste alertas tempranas por riesgos reiterados, pero la entidad no adopta las recomendaciones y continua el proceso sin ajustes.
-
-Que haces?
-
-- A) Cerrar alertas
-- B) Escalar la situacion, dejar trazabilidad y considerar acciones adicionales en control posterior
-- C) No insistir
-- D) Cambiar de auditor
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: El seguimiento a alertas previene recurrencia y documenta reincidencia.
-
-</details>
-
-
-Pregunta 19.
-Al cierre, la entidad propone que su oficina de control interno emita un informe para reemplazar el informe de la CGR.
-
-Que haces?
-
-- A) Aceptar para optimizar tiempos
-- B) El control interno puede ser insumo, pero no reemplaza el control fiscal externo
-- C) Tomarlo como informe final
-- D) Publicarlo como si fuera de la CGR
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: El control externo es indelegable; los insumos internos no reemplazan la auditoria.
-
-</details>
-

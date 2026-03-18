@@ -1,361 +1,255 @@
-# Tema 6 - Auditoria Forense (20 casos)
+# Tema 6: Auditoría Forense y Técnicas de Investigación Criminal Aplicada
+1. Durante el análisis financiero de un municipio, el auditor forense aplica la "Ley de Benford" a los pagos a contratistas. El análisis revela que el número "8" aparece como primer dígito en el 45% de los cheques, en lugar de los números bajos (1, 2, 3) como es matemáticamente natural. ¿Qué concluye el auditor?
 
-Pregunta 1.
-En una auditoria forense encuentras facturas con numeracion duplicada y montos distintos.
+A) Que el contador del municipio tiene una preferencia estilística por el número 8 al escribir.
 
-Que haces?
+B) Es una red flag (bandera roja) o anomalía estadística que sugiere una alta probabilidad de que las cifras de las facturas hayan sido inventadas o fraccionadas artificialmente, requiriendo revisión documental profunda.
 
-- A) Pasarlo por alto
-- B) Analizar trazabilidad y solicitar soportes originales
-- C) Preguntar informalmente
-- D) Eliminar una copia
-<details><summary>Mostrar respuesta</summary>
+C) Que no hay ningún problema, pues la estadística no aplica en las finanzas públicas locales.
 
-Respuesta correcta: B
+D) Que se trata de un error de software del banco emisor de los cheques.
 
-Justificacion: Doble facturacion es indicio de fraude; requiere verificacion documental.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> La Ley de Benford es una herramienta de auditoría forense analítica. En un conjunto de datos contables naturales, los números 1, 2 y 3 aparecen con mucha más frecuencia como primeros dígitos. Un pico anormal en un número alto (como 8 o 9) es un fuerte indicio de manipulación, fraude o fraccionamiento de contratos para evadir topes legales.
 </details>
 
+2. Al llegar a la bodega donde reposan los materiales de una obra investigada, el auditor forense encuentra que la puerta ha sido forzada y hay documentos tirados en el suelo. El encargado del sitio le ofrece recoger todo rápido para que pueda auditar. ¿Cómo debe proceder el auditor forense?
 
-Pregunta 2.
-Un informe financiero presenta firmas digitalizadas no verificables.
+A) Ayudar al encargado a recoger y organizar las carpetas para iniciar el trabajo lo antes posible por eficiencia.
 
-Que haces?
+B) Asumir de inmediato que el alcalde mandó a destruir la evidencia e imputar cargos verbales.
 
-- A) Aceptar
-- B) Verificar autenticidad y solicitar firma valida
-- C) Imprimir y firmar tu mismo
-- D) Ignorar
-<details><summary>Mostrar respuesta</summary>
+C) Ordenar suspender cualquier actividad en el lugar, acordonar la zona, fijar fotográficamente la escena tal cual se encontró, levantar actas del estado del lugar y reportar la posible alteración de evidencias probatorias.
 
-Respuesta correcta: B
+D) Irse del lugar y regresar la semana siguiente cuando hayan ordenado la bodega.
 
-Justificacion: La autenticidad es clave en auditoria forense.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
+
+<i>Justificación:</i> En criminalística y auditoría forense, el principio básico es la protección y preservación del lugar de los hechos (escena). Permitir que se altere contamina la evidencia y rompe cualquier posibilidad de determinar técnicamente qué ocurrió.
 </details>
 
+3. Un denunciante entrega a la CGR una memoria USB que contiene presuntos correos electrónicos y audios comprometedores entre un contratista y un interventor. Para garantizar el valor probatorio de esta evidencia digital en un juicio fiscal, la primera acción técnica forense debe ser:
 
-Pregunta 3.
-Se hallan contratos donde el proveedor y el evaluador comparten direccion y telefono.
+A) Extraer y documentar el código Hash (algoritmo matemático) de los archivos originales, hacer una copia espejo (clonación forense) para trabajar sobre ella, y preservar la USB original bajo cadena de custodia estricta.
 
-Que haces?
+B) Abrir los audios inmediatamente en el computador personal del auditor para ver si el denunciante dice la verdad.
 
-- A) Normal
-- B) Analizar relacion y posible conflicto de interes para remision
-- C) Ignorar
-- D) Pedir carta de buena fe
-<details><summary>Mostrar respuesta</summary>
+C) Subir todos los archivos a Google Drive para que todos los auditores de la entidad puedan verlos.
 
-Respuesta correcta: B
+D) Formatear la USB inmediatamente después de copiar los archivos a un CD, para devolverla limpia al denunciante.
 
-Justificacion: Coincidencias sugieren colusion o conflicto de interes.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
+
+<i>Justificación:</i> La evidencia digital es volátil y fácilmente alterable. El estándar forense exige obtener el código Hash (la huella digital del archivo) antes de cualquier manipulación, trabajar siempre sobre copias bit a bit y preservar el soporte original documentando su cadena de custodia.
 </details>
 
+4. En una revisión forense de contratos, se detecta que la empresa ganadora de una licitación millonaria de alimentos fue constituida en Cámara de Comercio apenas 5 días antes de la apertura del proceso, su capital social es de $100.000 pesos, y su dirección principal registrada es un lote baldío. Estos son indicadores típicos de:
 
-Pregunta 4.
-El sistema contable muestra borrado de registros sin log de auditoria.
+A) Una empresa emergente (Startup) de alto rendimiento tecnológico amparada por la ley.
 
-Que haces?
+B) Una "Empresa Fachada" o de papel, creada con el propósito específico de simular pluralidad de oferentes, desviar fondos públicos o lavar activos.
 
-- A) Aceptar
-- B) Solicitar bitacoras y peritaje de integridad
-- C) Restablecer sin investigar
-- D) Pedir explicacion verbal
-<details><summary>Mostrar respuesta</summary>
+C) Un error de digitación inofensivo en el Registro Único Tributario (RUT).
 
-Respuesta correcta: B
+D) Una figura legal de fiducia mercantil en garantía.
 
-Justificacion: Borrado sin log indica posible manipulacion; se requiere peritaje.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> En auditoría forense, las empresas recién constituidas sin capacidad financiera o técnica demostrable, con direcciones falsas o testaferros, son tipologías clásicas de "empresas de papel" utilizadas en redes de corrupción para saquear recursos del Estado.
 </details>
 
+5. El equipo de auditoría examina una serie de facturas físicas que amparan compras de tecnología. Al revisarlas con lupa y luz ultravioleta, el perito grafólogo nota que los números del valor total tienen un tono de tinta distinto y presentan rugosidad en el papel subyacente. Esto indica:
 
-Pregunta 5.
-Un supervisor certifica entregas completas pero fotos muestran material incompleto.
+A) Falsedad ideológica en documento público, porque el texto dice mentiras.
 
-Que haces?
+B) Un daño causado por el agua durante el transporte de los archivos.
 
-- A) Confiar en supervisor
-- B) Comparar evidencia y abrir linea investigativa forense
-- C) Ignorar fotos
-- D) Acordar version
-<details><summary>Mostrar respuesta</summary>
+C) Falsedad material mediante alteración mecánica (borrado o raspado) y sobreescritura, lo que constituye una alteración física fraudulenta del documento.
 
-Respuesta correcta: B
+D) Que el impresor del proveedor se estaba quedando sin tinta de forma intermitente.
 
-Justificacion: Inconsistencias requieren verificacion forense.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
+
+<i>Justificación:</i> La alteración física de las características de un documento (raspaduras, lavados químicos, injertos o sobreescritura con distintas tintas) configura falsedad material. Esto se detecta mediante peritaje documentológico y grafológico.
 </details>
 
+6. Un supervisor firmó bajo juramento (certificación) que recibió 50 computadores portátiles marca Apple el 15 de diciembre en la sede principal. Sin embargo, al cruzar datos forenses, el auditor obtiene los registros de la empresa de seguridad que demuestran que ese día el supervisor estaba incapacitado y no asistió al edificio. Estamos frente a un caso de presunta:
 
-Pregunta 6.
-En una auditoria forense encuentras facturas con numeracion duplicada y montos distintos.
+A) Extorsión agravada por la confianza del cargo.
 
-Que haces?
+B) Falsedad ideológica, ya que el documento original y la firma son verdaderos, pero el contenido de la certificación (los hechos que narra) es falso y contrario a la verdad.
 
-- A) Pasarlo por alto
-- B) Analizar trazabilidad y solicitar soportes originales
-- C) Preguntar informalmente
-- D) Eliminar una copia
-<details><summary>Mostrar respuesta</summary>
+C) Falsedad material, porque el papel se imprimió un día que no era laborable.
 
-Respuesta correcta: B
+D) Error aritmético sin mayor trascendencia porque igual los computadores aparecieron después.
 
-Justificacion: Doble facturacion es indicio de fraude; requiere verificacion documental.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> La "falsedad ideológica" ocurre cuando un servidor público expide un documento genuino en sus formas y firmas, pero consigna en él declaraciones o hechos falsos (certificar haber recibido bienes que no recibió).
 </details>
 
+7. Durante el análisis del sistema contable (software ERP) de una entidad, el auditor informático forense solicita la tabla de "Logs" (registros de auditoría del sistema). El jefe de sistemas indica que esos logs "se borran automáticamente cada 24 horas por defecto del proveedor". ¿Cuál es el riesgo forense aquí?
 
-Pregunta 7.
-Un informe financiero presenta firmas digitalizadas no verificables.
+A) Que el software está funcionando de manera óptima y ahorrando espacio en los servidores del Estado.
 
-Que haces?
+B) Ninguno, ya que los logs no son documentos válidos como prueba en Colombia.
 
-- A) Aceptar
-- B) Verificar autenticidad y solicitar firma valida
-- C) Imprimir y firmar tu mismo
-- D) Ignorar
-<details><summary>Mostrar respuesta</summary>
+C) Representa un riesgo crítico de ocultamiento y falta de trazabilidad. Los logs son la huella inmutable de quién creó, modificó o eliminó registros, y su borrado premeditado impide reconstruir rastros de fraudes financieros internos.
 
-Respuesta correcta: B
+D) Que la CGR tendrá que pagar la licencia completa del software para acceder a los datos.
 
-Justificacion: La autenticidad es clave en auditoria forense.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
+
+<i>Justificación:</i> Las bitácoras o logs transaccionales son evidencia digital vital. La configuración deliberada para que estos se borren rápidamente en un sistema contable público es una bandera roja gigante de falta de controles y posible encubrimiento de actividades ilícitas (borrado de huellas).
 </details>
 
+8. En un proceso forense de una megaobra, se sospecha de "sobrecostos encubiertos" por sustitución de calidades. El contrato exigía acero estructural de máxima resistencia para un puente, pero el contratista instaló un acero comercial mucho más barato, cobrando el precio del caro. ¿Qué técnica forense es indispensable para probar el daño fiscal?
 
-Pregunta 8.
-Se hallan contratos donde el proveedor y el evaluador comparten direccion y telefono.
+A) Exigir que el alcalde jure sobre la Biblia que el puente no se va a caer.
 
-Que haces?
+B) Intervenir las comunicaciones telefónicas del contratista de manera inmediata.
 
-- A) Normal
-- B) Analizar relacion y posible conflicto de interes para remision
-- C) Ignorar
-- D) Pedir carta de buena fe
-<details><summary>Mostrar respuesta</summary>
+C) Confiar en la factura final del proveedor de metales sin hacer más inspecciones.
 
-Respuesta correcta: B
+D) Realizar inspección física con peritos ingenieros, tomar muestras de núcleo o esclerometría en la estructura instalada y realizar pruebas de laboratorio para comparar la calidad real frente a la cobrada.
 
-Justificacion: Coincidencias sugieren colusion o conflicto de interes.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: D</b>.
 
+
+<i>Justificación:</i> En investigaciones forenses de ingeniería civil, la prueba reina no es el papel, sino la confirmación material en campo y laboratorio (peritaje técnico) de que los materiales instalados no corresponden a las especificaciones técnicas cobradas al Estado.
 </details>
 
+9. Al investigar el desvío de subsidios agrícolas, se evidencia un esquema de "Triangulación Financiera". Esto significa que:
 
-Pregunta 9.
-El sistema contable muestra borrado de registros sin log de auditoria.
+A) Los recursos pasaron directamente del tesoro nacional al bolsillo del agricultor beneficiario sin intermediarios.
 
-Que haces?
+B) Los dineros públicos se transfirieron de la entidad oficial a un contratista o corporación fachada, y esta a su vez, en pocos días, los transfirió a las cuentas personales de políticos o funcionarios, difuminando el rastro.
 
-- A) Aceptar
-- B) Solicitar bitacoras y peritaje de integridad
-- C) Restablecer sin investigar
-- D) Pedir explicacion verbal
-<details><summary>Mostrar respuesta</summary>
+C) El dinero se invirtió en títulos de deuda de la Tesorería General de la Nación.
 
-Respuesta correcta: B
+D) Se usó una tabla de Excel con forma de triángulo para presentar los balances.
 
-Justificacion: Borrado sin log indica posible manipulacion; se requiere peritaje.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> La triangulación es una técnica de lavado de activos y ocultamiento en la corrupción. Implica usar intermediarios (empresas, ONG, terceros) para romper el vínculo aparente entre el dinero público y el beneficiario final corrupto, requiriendo el levantamiento de reserva bancaria para rastrear la ruta del dinero.
 </details>
 
+10. La "Cadena de Custodia" en el ámbito de la auditoría forense fiscal garantiza principalmente que:
 
-Pregunta 10.
-Un supervisor certifica entregas completas pero fotos muestran material incompleto.
+A) El auditor gane un porcentaje del dinero recuperado como premio.
 
-Que haces?
+B) Los documentos se guarden en una caja fuerte de un banco suizo.
 
-- A) Confiar en supervisor
-- B) Comparar evidencia y abrir linea investigativa forense
-- C) Ignorar fotos
-- D) Acordar version
-<details><summary>Mostrar respuesta</summary>
+C) Los investigados sean encarcelados preventivamente antes del fallo.
 
-Respuesta correcta: B
+D) La evidencia recolectada (física, digital o documental) mantenga su autenticidad, integridad e identidad desde el momento de su hallazgo hasta su valoración final en el juicio, demostrando que no ha sido alterada ni sustituida.
 
-Justificacion: Inconsistencias requieren verificacion forense.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: D</b>.
 
+
+<i>Justificación:</i> La cadena de custodia es el procedimiento documentado que asegura que la prueba que se analiza y valora es exactamente la misma que se encontró en la escena, garantizando su inalterabilidad e indemnidad procesal. Si se rompe, la prueba pierde valor legal.
 </details>
 
+11. Un testigo clave dentro de la entidad auditada, temiendo represalias, accede a entrevistarse con el auditor forense, pero exige no firmar el acta ni que se mencione su nombre. ¿Cómo debe manejar el auditor forense esta entrevista?
 
-Pregunta 11.
-En una auditoria forense encuentras facturas con numeracion duplicada y montos distintos.
+A) La información suministrada se toma como "inteligencia o fuente no formal" para abrir nuevas líneas de investigación técnica y documental objetiva, pero el testimonio sin firma no puede usarse directamente como prueba imputable en el informe.
 
-Que haces?
+B) Desestimar la información y expulsar al testigo de la oficina por cobardía.
 
-- A) Pasarlo por alto
-- B) Analizar trazabilidad y solicitar soportes originales
-- C) Preguntar informalmente
-- D) Eliminar una copia
-<details><summary>Mostrar respuesta</summary>
+C) Falsificar la firma del testigo en el acta usando un nombre inventado para que la prueba tenga validez.
 
-Respuesta correcta: B
+D) Grabar al testigo en video con cámara oculta y presentar eso como prueba reina sin su consentimiento.
 
-Justificacion: Doble facturacion es indicio de fraude; requiere verificacion documental.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
+
+<i>Justificación:</i> En forense, los testimonios anónimos o no formalizados son valiosos como orientadores (indicios) que le indican al investigador dónde buscar la evidencia documental o técnica (que sí es prueba sólida). No se pueden fundamentar hallazgos exclusivamente en dichos anónimos.
 </details>
 
+12. Al revisar los expedientes de contratación de suministro de llantas, el auditor forense nota que en 5 licitaciones diferentes a lo largo del año, siempre se presentaron los mismos tres proponentes (A, B y C). El proponente A ganó las dos primeras, el B las dos siguientes, y el C la última. Todos presentaron precios sorprendentemente cercanos. Esto es un indicio técnico de:
 
-Pregunta 12.
-Un informe financiero presenta firmas digitalizadas no verificables.
+A) Un mercado altamente competitivo y sano, donde el Estado logró la máxima economía posible y un excelente estudio del sector.
 
-Que haces?
+B) Colusión en la contratación pública (cárteles de licitadores), donde empresas privadas acuerdan turnarse las adjudicaciones simulando competencia.
 
-- A) Aceptar
-- B) Verificar autenticidad y solicitar firma valida
-- C) Imprimir y firmar tu mismo
-- D) Ignorar
-<details><summary>Mostrar respuesta</summary>
+C) Un error del sistema SECOP que invitó a las empresas equivocadas.
 
-Respuesta correcta: B
+D) Monopolio estatal puro.
 
-Justificacion: La autenticidad es clave en auditoria forense.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> La rotación de adjudicatarios entre un mismo grupo cerrado, con diferencias marginales de precio y presencia recurrente, son indicadores de alerta roja de colusión (acuerdos anticompetitivos o cárteles) en la contratación, lo que amerita cruces forenses de socios, IPs y metadatos de las propuestas.
 </details>
 
+13. Un equipo auditor descubre que una carretera pavimentada hace 6 meses ya presenta hundimientos severos. Para probar técnicamente que el contratista no puso las capas de asfalto cobradas en el contrato (falsedad en la calidad y cantidad), la herramienta criminalística indicada es:
 
-Pregunta 13.
-Se hallan contratos donde el proveedor y el evaluador comparten direccion y telefono.
+A) Solicitar que la alcaldía repavimente rápido antes de que ocurra un accidente.
 
-Que haces?
+B) Interrogar con detector de mentiras (polígrafo) al ingeniero residente de la obra.
 
-- A) Normal
-- B) Analizar relacion y posible conflicto de interes para remision
-- C) Ignorar
-- D) Pedir carta de buena fe
-<details><summary>Mostrar respuesta</summary>
+C) Revisar la cuenta de cobro en Excel para buscar errores ortográficos.
 
-Respuesta correcta: B
+D) Ordenar un estudio de patología estructural (extracciones de núcleos o apiques de la vía) para medir físicamente in situ el grosor y densidad de la estructura instalada frente a los planos.
 
-Justificacion: Coincidencias sugieren colusion o conflicto de interes.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: D</b>.
 
+
+<i>Justificación:</i> En casos de infraestructura defectuosa, la evidencia documental debe ser contrastada y desvirtuada mediante pruebas de patología de obra (peritajes técnicos destructivos o no destructivos) para cuantificar exactamente el detrimento (la diferencia entre lo cobrado y lo realmente construido).
 </details>
 
+14. Al terminar el informe de auditoría forense que devela un multimillonario carrusel de contratación, ¿puede el auditor afirmar categóricamente en sus conclusiones que "El Alcalde cometió el Delito de Peculado por Apropiación y Celebración Indebida de Contratos"?
 
-Pregunta 14.
-El sistema contable muestra borrado de registros sin log de auditoria.
+A) Sí, porque las evidencias forenses recolectadas por la CGR son irrefutables y tienen jerarquía penal inmediata.
 
-Que haces?
+B) Sí, siempre que el informe se publique primero en los medios de comunicación de alcance nacional.
 
-- A) Aceptar
-- B) Solicitar bitacoras y peritaje de integridad
-- C) Restablecer sin investigar
-- D) Pedir explicacion verbal
-<details><summary>Mostrar respuesta</summary>
+C) No. El auditor forense debe concluir hechos fácticos, irregularidades documentadas, daños patrimoniales e indicios de fraude fáctico, pero la tipificación y declaratoria del "delito" le compete única y exclusivamente a un juez penal de la república, por lo que debe compulsar copias a la Fiscalía.
 
-Respuesta correcta: B
+D) No, porque a los alcaldes no se les puede investigar por peculado, solo por enriquecimiento ilícito.
 
-Justificacion: Borrado sin log indica posible manipulacion; se requiere peritaje.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
+
+<i>Justificación:</i> El auditor forense emite un informe técnico y pericial sobre presuntos desvíos, fraudes o irregularidades. Puede documentar el "modus operandi", pero la calificación jurídica penal (declarar que alguien es un delincuente culpable de un tipo penal específico) es potestad exclusiva y jurisdiccional de los jueces (Fiscalía/Rama Judicial).
 </details>
 
+15. Dentro del análisis de un archivo informático incautado, el perito en informática forense revisa los "Metadatos" de un documento de Word (el acta de adjudicación). ¿Qué información clave aportan estos metadatos a la investigación de corrupción?
 
-Pregunta 15.
-Un supervisor certifica entregas completas pero fotos muestran material incompleto.
+A) Contienen la dirección IP del servidor del banco donde se consignó el soborno al funcionario.
 
-Que haces?
+B) Revelan la fecha y hora real de creación y última modificación del archivo, el usuario y el nombre del equipo de cómputo donde se editó originalmente, permitiendo evidenciar si el documento fue antedatado o creado después de que venciera el plazo legal.
 
-- A) Confiar en supervisor
-- B) Comparar evidencia y abrir linea investigativa forense
-- C) Ignorar fotos
-- D) Acordar version
-<details><summary>Mostrar respuesta</summary>
+C) Traducen automáticamente el contenido del documento a otros idiomas para auditorías internacionales cruzadas.
 
-Respuesta correcta: B
+D) Desbloquean las contraseñas de las cuentas bancarias vinculadas en el documento de texto.
 
-Justificacion: Inconsistencias requieren verificacion forense.
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
+
+<i>Justificación:</i> Los metadatos son "datos sobre los datos". En un archivo informático, almacenan silenciosamente la traza de autoría, horas de creación, ediciones y tiempos de impresión. Son fundamentales en auditoría forense para descubrir si un documento oficial fue fabricado o alterado a posteriori para simular el cumplimiento de un requisito (antedatar).
 </details>
-
-
-Pregunta 16.
-En una auditoria forense encuentras facturas con numeracion duplicada y montos distintos.
-
-Que haces?
-
-- A) Pasarlo por alto
-- B) Analizar trazabilidad y solicitar soportes originales
-- C) Preguntar informalmente
-- D) Eliminar una copia
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: Doble facturacion es indicio de fraude; requiere verificacion documental.
-
-</details>
-
-
-Pregunta 17.
-Un informe financiero presenta firmas digitalizadas no verificables.
-
-Que haces?
-
-- A) Aceptar
-- B) Verificar autenticidad y solicitar firma valida
-- C) Imprimir y firmar tu mismo
-- D) Ignorar
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: La autenticidad es clave en auditoria forense.
-
-</details>
-
-
-Pregunta 18.
-Se hallan contratos donde el proveedor y el evaluador comparten direccion y telefono.
-
-Que haces?
-
-- A) Normal
-- B) Analizar relacion y posible conflicto de interes para remision
-- C) Ignorar
-- D) Pedir carta de buena fe
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: Coincidencias sugieren colusion o conflicto de interes.
-
-</details>
-
-
-Pregunta 19.
-El sistema contable muestra borrado de registros sin log de auditoria.
-
-Que haces?
-
-- A) Aceptar
-- B) Solicitar bitacoras y peritaje de integridad
-- C) Restablecer sin investigar
-- D) Pedir explicacion verbal
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: Borrado sin log indica posible manipulacion; se requiere peritaje.
-
-</details>
-
-
-Pregunta 20.
-Un supervisor certifica entregas completas pero fotos muestran material incompleto.
-
-Que haces?
-
-- A) Confiar en supervisor
-- B) Comparar evidencia y abrir linea investigativa forense
-- C) Ignorar fotos
-- D) Acordar version
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: Inconsistencias requieren verificacion forense.
-
-</details>
-

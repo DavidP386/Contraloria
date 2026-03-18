@@ -1,381 +1,256 @@
-# Tema 3 - PQRS (20 casos)
+# Tema 3: Normatividad Relativa a la Atención y Trámites de PQRS
+1. Un ciudadano radica una petición ante la CGR exigiendo que la entidad ordene la pavimentación inmediata de la calle frente a su casa, argumentando que los huecos dañan su vehículo. ¿Cuál es la actuación legal procedente frente a esta solicitud?
 
-Pregunta 1.
-Llega un derecho de peticion pidiendo copia de un informe preliminar de auditoria en curso. El ciudadano insiste en conocer 'como van los hallazgos' antes de la version final.
+A) Iniciar una auditoría forense a la junta de acción comunal del barrio.
 
-Que haces?
+B) Trasladar la petición a la alcaldía municipal respectiva dentro de los cinco (5) días hábiles siguientes, informando de este traslado al peticionario, por ser la entidad competente.
 
-- A) Entregar el preliminar completo
-- B) Negar sin motivacion
-- C) Explicar reserva temporal del preliminar y ofrecer version final o partes no reservadas cuando proceda
-- D) Trasladar al sujeto de control
+C) Responder de fondo negando la petición por falta de presupuesto de la CGR.
 
-<details><summary>Mostrar respuesta</summary>
+D) Archivar la petición por improcedente sin notificar al ciudadano.
 
-Respuesta correcta: C
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: Los preliminares tienen reserva temporal; la respuesta debe ser de fondo, motivada y orientadora sobre plazo y acceso posterior.
 
+<i>Justificación:</i> Según el CPACA (Ley 1437 de 2011), cuando una entidad no es competente para resolver una petición, debe remitirla a la autoridad competente en un plazo máximo de 5 días hábiles e informar al peticionario (traslado por competencia).
 </details>
 
+2. Una veeduría ciudadana solicita copias de los soportes contables de un contrato ya liquidado. Al hacer el cálculo, el área de gestión documental de la CGR determina que son más de 2.000 folios. ¿Cómo debe proceder la entidad respecto a los costos de reproducción?
 
-Pregunta 2.
-Una PQRS denuncia sobrecostos en un contrato y adjunta capturas de pantalla con precios. Los anexos son legibles y verificables, pero el firmante pide anonimato por temor a represalias.
+A) Entregar las copias físicas asumiendo la CGR el costo total por tratarse de una veeduría.
 
-Que haces?
+B) Negar la información alegando que es un volumen excesivo que entorpece la función administrativa.
 
-- A) Archivar por ser anónima
-- B) Pedir la cédula como requisito de fondo
-- C) Tramitar oficiosamente por verosimilitud, proteger identidad y remitir la informacion al equipo auditor
-- D) Publicar el nombre del denunciante para transparencia
+C) Requerir al peticionario el pago de los costos de reproducción (fotocopias) según la tarifa institucional previa a la entrega, u ofrecer la entrega en formato digital sin costo si está disponible.
 
-<details><summary>Mostrar respuesta</summary>
+D) Obligar a la veeduría a llevar su propia impresora a las instalaciones de la CGR.
 
-Respuesta correcta: C
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: La oficiosidad permite actuar si hay elementos verificables; la identidad del denunciante se protege conforme a la ley.
 
+<i>Justificación:</i> El acceso a la información pública es gratuito, pero la reproducción física (copias) corre por cuenta del peticionario. Se debe cobrar únicamente el valor exacto de reproducción según la normatividad interna, u ofrecer alternativas digitales gratuitas.
 </details>
 
+3. Se recibe una denuncia anónima a través de la página web de la CGR sobre un presunto carrusel de contratación en una gobernación. La denuncia aporta correos electrónicos, números de contratos y extractos bancarios verificables. ¿Qué trámite se le debe dar?
 
-Pregunta 3.
-Ingresan 30 PQRS con el mismo asunto y hechos sobre un contrato de aseo. Provienen de correos distintos, pero el contenido es casi idéntico.
+A) Tramitarla de oficio mediante actuación de control fiscal, dado que aporta evidencias comprobables y suficientes para iniciar una indagación, manteniendo la reserva del origen.
 
-Que haces?
+B) Exigir mediante edicto que el denunciante se identifique con cédula para poder validar el trámite.
 
-- A) Responder una y archivar las demas
-- B) Acumular por conexidad, dar respuesta de fondo y registrar la trazabilidad
-- C) Dividir por orden alfabetico
-- D) Trasladar al azar a otras entidades
+C) Trasladar la denuncia a la Fiscalía General de la Nación de forma exclusiva, cerrando el caso en la CGR.
 
-<details><summary>Mostrar respuesta</summary>
+D) Archivarla inmediatamente porque la ley exige que toda PQRS esté firmada e identificada plenamente.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
-Justificacion: La acumulacion por conexidad evita duplicidad y garantiza respuesta integral con trazabilidad.
 
+<i>Justificación:</i> La Ley 1755 de 2015 y la Ley 190 de 1995 (Estatuto Anticorrupción) establecen que las denuncias anónimas deben tramitarse siempre que aporten elementos probatorios o indicios verificables que permitan inferir la comisión de una irregularidad (actuación oficiosa).
 </details>
 
+4. Dentro del trámite de un proceso de responsabilidad fiscal, un periodista solicita mediante derecho de petición la historia clínica completa del presunto responsable, alegando que es de "interés nacional" por ser un funcionario de alto nivel. ¿Cómo se resuelve la petición?
 
-Pregunta 4.
-Un usuario solicita base de datos de beneficiarios con campos de salud y direcciones. Alega control ciudadano, pero no precisa uso ni minimizacion.
+A) Entregar la historia clínica parcial, tachando únicamente los diagnósticos psiquiátricos.
 
-Que haces?
+B) Entregar la información completa porque el derecho a la información de la prensa prima sobre los datos personales.
 
-- A) Entregar la base integra
-- B) Negar toda informacion por contener datos personales
-- C) Entregar version testada/anonimizada y solo los campos pertinentes al fin declarado
-- D) Pedir al usuario una carta de confidencialidad y entregar todo
+C) Remitir la petición al Ministerio de Salud para que autorice el levantamiento de la reserva.
 
-<details><summary>Mostrar respuesta</summary>
+D) Negar el acceso a la historia clínica por tratarse de datos sensibles protegidos por reserva legal estricta y el derecho fundamental a la intimidad, no sujetos al escrutinio público sin orden judicial o autorización del titular.
 
-Respuesta correcta: C
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: D</b>.
 
-Justificacion: Se concilia acceso con proteccion de datos aplicando minimizacion y testado; se exige finalidad clara.
 
+<i>Justificación:</i> Las historias clínicas son documentos privados y sometidos a estricta reserva legal (Ley 23 de 1981 y Habeas Data). Ni siquiera en investigaciones fiscales o periodísticas se pueden revelar sin autorización expresa del paciente o una orden de juez de la república competente.
 </details>
 
+5. Un ciudadano radica una petición con la misma solicitud exacta (preguntando por el estado de una misma obra) que ya se le había resuelto de fondo, clara y oportunamente un mes atrás. ¿Cómo debe actuar el funcionario asignado?
 
-Pregunta 5.
-Una queja reclama trato irrespetuoso de un servidor de ventanilla de la CGR. El ciudadano pide sancion inmediata y copia de la historia laboral del servidor.
+A) Sancionar al ciudadano económicamente por abuso del derecho de petición.
 
-Que haces?
+B) Iniciar un nuevo proceso de recolección de pruebas desde cero.
 
-- A) Ignorar por no ser control externo
-- B) Remitir todo a la entidad auditada
-- C) Activar canal disciplinario interno si procede y responder de fondo; entregar solo lo procedente por ley
-- D) Publicar la hoja de vida completa
+C) Emitir una respuesta remitiéndose a las consideraciones y decisiones del acto administrativo anterior, indicando que hay hecho superado respecto a la respuesta.
 
-<details><summary>Mostrar respuesta</summary>
+D) Ignorar la petición y dejar que opere el silencio administrativo.
 
-Respuesta correcta: C
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: La CGR debe gestionar la queja interna por trato, responder de fondo y proteger datos personales.
 
+<i>Justificación:</i> El CPACA establece que ante peticiones reiterativas que ya fueron resueltas de fondo y sobre las cuales no se aportan hechos nuevos, la entidad puede remitirse a la respuesta anterior para garantizar el principio de economía procesal.
 </details>
 
+6. Un campesino se acerca a la gerencia departamental de la CGR y manifiesta que no sabe leer ni escribir, pero desea formular una queja verbal por presuntos sobrecostos en los fertilizantes entregados por la alcaldía. El vigilante le dice que todo debe ser por escrito. ¿Esta orientación es correcta?
 
-Pregunta 6.
-Radicaste una peticion pero por error de reparto interno se vencio el termino legal. Ya tienes respuesta de fondo lista.
+A) Sí, las entidades de control fiscal solo tramitan denuncias mediante documento físico radicado y firmado.
 
-Que haces?
+B) No. La entidad tiene la obligación de recibir peticiones verbales, debiendo el funcionario competente dejar constancia escrita de la queja (o grabada) y entregarle radicado al ciudadano.
 
-- A) No mencionar la tardanza
-- B) Responder de fondo, reconocer la falla y adoptar acciones de mejora
-- C) Borrar el radicado y registrar nueva fecha
-- D) Culpar al ciudadano por no insistir
+C) Sí, pero debe orientarlo para que busque un abogado que le redacte el documento.
 
-<details><summary>Mostrar respuesta</summary>
+D) No, se le debe dar un correo electrónico para que envíe una nota de voz.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: Debe garantizarse oportunidad y mejora continua; se reconoce y corrige la falla con trazabilidad.
 
+<i>Justificación:</i> El derecho de petición (Art. 23 C.P.) se puede ejercer de forma verbal o escrita. Si es verbal, la entidad debe facilitar los mecanismos (como la transcripción mediante actas o grabaciones) y entregar constancia de radicación, garantizando el acceso sin discriminación.
 </details>
 
+7. Una queja ingresa a la plataforma indicando que un auditor de la CGR presuntamente trató con lenguaje soez y discriminatorio a los empleados de la entidad auditada durante una visita. ¿A qué dependencia de la CGR debe remitirse esta queja para su trámite de fondo?
 
-Pregunta 7.
-Una PQRS solicita concepto juridico vinculante sobre un caso particular del peticionario frente a un contrato con un privado.
+A) A la Oficina de Control Interno Disciplinario de la CGR.
 
-Que haces?
+B) A la Contraloría Delegada para la Participación Ciudadana.
 
-- A) Emitir concepto vinculante
-- B) Explicar limites de competencia; orientar con referencias generales sin resolver el caso particular
-- C) Trasladar a una notaria
-- D) Archivar por improcedente sin responder
+C) Al despacho del Contralor General para destitución inmediata.
 
-<details><summary>Mostrar respuesta</summary>
+D) A la Procuraduría General de la Nación para que asuma el poder preferente de entrada.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
-Justificacion: La CGR no emite conceptos vinculantes individuales; debe orientar y pedagógicamente remitir a marcos generales.
 
+<i>Justificación:</i> Las quejas por comportamientos contrarios a los deberes funcionales y trato irrespetuoso de los propios servidores de la CGR configuran una presunta falta disciplinaria, cuya competencia en primera instancia es de la Oficina de Control Interno Disciplinario de la entidad.
 </details>
 
+8. Un ciudadano solicita que se auditen "todos los contratos de infraestructura del departamento", pero no especifica periodo, municipio, ni entidad ejecutora. Tras revisarla, es imposible iniciar una actuación por la vaguedad. ¿Qué acción procede?
 
-Pregunta 8.
-La entidad competente para un tema trasladado no ha respondido dentro del termino, y el ciudadano insiste en saber el estado.
+A) Archivar directamente por falta de competencia técnica.
 
-Que haces?
+B) Asumir la auditoría de todos los contratos desde 1991 a la fecha.
 
-- A) Cerrar caso en CGR
-- B) Insistir coordinadamente, hacer seguimiento y mantener informado al ciudadano
-- C) Declarar silencio administrativo positivo
-- D) Publicar el incumplimiento en redes
+C) Requerir al peticionario para que en un término máximo de un (1) mes aclare o complete la información. Si no lo hace, se decreta el desistimiento.
 
-<details><summary>Mostrar respuesta</summary>
+D) Responder que la CGR no realiza ese tipo de auditorías.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: Corresponde seguimiento y comunicacion al ciudadano para no vulnerar su derecho de peticion.
 
+<i>Justificación:</i> Cuando una petición es incompleta o incomprensible, no se rechaza de plano. Se debe requerir al ciudadano (Art. 17 CPACA) para que la complete en el término de 1 mes. Solo si hay silencio tras ese plazo, se decreta el desistimiento y archivo.
 </details>
 
+9. Vence el plazo legal para responder un derecho de petición de información (10 días) y el funcionario encargado no ha emitido respuesta, ni ha solicitado prórroga argumentando carga laboral. ¿Qué consecuencia jurídica inmediata acarrea esta omisión?
 
-Pregunta 9.
-Un ciudadano solicita la informacion en formato abierto (CSV) alegando analisis propios. La entidad solo tiene PDF.
+A) El ciudadano adquiere el derecho automático a una indemnización del Estado.
 
-Que haces?
+B) Se suspenden los términos automáticamente hasta que el funcionario tenga disponibilidad.
 
-- A) Entregar solo PDF por politica interna
-- B) Entregar en el formato disponible y explicar limitaciones; si es viable convertir razonablemente, hacerlo
-- C) Cobrar licencia por los datos
-- D) Negar porque puede manipularse
+C) Se configura un silencio administrativo positivo, aprobando los sobrecostos de la entidad auditada.
 
-<details><summary>Mostrar respuesta</summary>
+D) El peticionario puede interponer Acción de Tutela por vulneración al derecho fundamental de petición, y el funcionario incurre en una presunta falta disciplinaria.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: D</b>.
 
-Justificacion: Debe facilitarse el acceso efectivo; se entrega lo disponible y se promueve formato abierto si es razonable.
 
+<i>Justificación:</i> La falta de respuesta oportuna y de fondo a una petición vulnera un derecho fundamental (tutelable) y es causal de investigación disciplinaria para el servidor responsable por omisión o retardo injustificado en sus funciones.
 </details>
 
+10. Un estudiante universitario envía un derecho de petición a la CGR haciendo 15 preguntas hipotéticas y teóricas sobre cómo interpretar el concepto de "valor presente neto" en las finanzas públicas. Según los términos del CPACA, ¿cuál es el plazo para resolver esta petición?
 
-Pregunta 10.
-Los anexos de una peticion llegan corruptos y no pueden abrirse. El contenido parece necesario para responder de fondo.
+A) 10 días hábiles por ser una petición de información.
 
-Que haces?
+B) 30 días hábiles por ser una petición de consulta.
 
-- A) Archivar por imposibilidad de lectura
-- B) Requerir subsanacion con anexos legibles y formato compatible
-- C) Responder sin anexos
-- D) Pedir transcripcion a mano
+C) 15 días hábiles por ser una queja general.
 
-<details><summary>Mostrar respuesta</summary>
+D) No se responde por ser un tema académico ajeno a la CGR.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: Se debe subsanar para garantizar decision de fondo con evidencia utilizable.
 
+<i>Justificación:</i> Las peticiones mediante las cuales se eleva una consulta a las autoridades en relación con las materias a su cargo deben resolverse dentro de los treinta (30) días hábiles siguientes a su recepción (Ley 1755 de 2015).
 </details>
 
+11. Un ciudadano envía una comunicación formal desistiendo explícitamente de una denuncia que había interpuesto sobre el mal manejo del Programa de Alimentación Escolar (PAE), indicando que "ya arregló el problema con el alcalde". ¿Cuál es el deber de la CGR?
 
-Pregunta 11.
-Una denuncia masiva reporta posible detrimento en contrato de vias rurales. Piden que se abra auditoria inmediata sin analisis previo.
+A) Aceptar el desistimiento del ciudadano frente al trámite de la PQRS, pero continuar la investigación fiscal de oficio dada la gravedad de los hechos y la naturaleza de orden público de los recursos del Estado.
 
-Que haces?
+B) Archivar el expediente de forma automática, pues sin el denunciante no hay caso.
 
-- A) Abrir auditoria de inmediato
-- B) Incorporar la informacion al mapa de riesgos, valorar materialidad y priorizar segun criterios tecnicos
-- C) Esperar seis meses
-- D) Remitir a autoridad penal sin revisar
+C) Trasladar el desistimiento a la Contaduría General de la Nación.
 
-<details><summary>Mostrar respuesta</summary>
+D) Sancionar al ciudadano por retractarse de la denuncia inicial.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
-Justificacion: La CGR debe integrar la informacion a su enfoque de riesgos y priorizar tecnicamente.
 
+<i>Justificación:</i> Aunque el ciudadano desista de su petición, el control fiscal defiende el patrimonio público. Si la CGR ya tiene conocimiento y pruebas de una presunta irregularidad, tiene el deber legal de investigar de oficio (Art. 267 C.P.), no pudiendo transigirse o desistirse el daño al erario.
 </details>
 
+12. Ingresa un derecho de petición de un ciudadano que requiere información documental urgente para anexar a una demanda de tutela cuyo plazo vence en 48 horas, demostrando que de no recibirla sufrirá un perjuicio irremediable a su salud. ¿Cómo se tramita?
 
-Pregunta 12.
-Se solicita rectificar un dato puntual de un informe ya publicado, aportando documento soporte que parece veraz.
+A) En los mismos 10 días hábiles de toda petición de documentos, ya que la ley no hace excepciones.
 
-Que haces?
+B) Se le pide que regrese con una orden del juez de tutela.
 
-- A) Negar toda posibilidad
-- B) Activar tramite de aclaracion/fe de erratas con trazabilidad
-- C) Modificar sin registro
-- D) Eliminar el informe
+C) Se le debe dar trámite y respuesta prioritaria de manera inmediata para evitar la consumación del perjuicio irremediable.
 
-<details><summary>Mostrar respuesta</summary>
+D) Se niega por estar inmerso en un proceso judicial ajeno.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: La rectificacion procede con evidencia y procedimiento documentado.
 
+<i>Justificación:</i> El CPACA (Art. 20) ordena dar atención prioritaria a las peticiones de reconocimiento de un derecho fundamental cuando deban ser resueltas para evitar un perjuicio irremediable al peticionario, comprobado de forma sumaria.
 </details>
 
+13. Un Senador de la República, en ejercicio del control político, solicita información sobre las actuaciones de la CGR en el mega proyecto de un túnel. Según el marco normativo especial, ¿qué término tiene la CGR para responder?
 
-Pregunta 13.
-Un ciudadano pide copia simple de un expediente voluminoso. La entidad no tiene capacidad inmediata de digitalizacion completa.
+A) 15 días hábiles.
 
-Que haces?
+B) 5 días hábiles.
 
-- A) Negar por volumen
-- B) Ofrecer acceso progresivo (citas, copias parciales, medios electronicos) y costos legales si aplican
-- C) Cobrar tarifa arbitraria
-- D) Trasladar a otra entidad
+C) 30 días hábiles.
 
-<details><summary>Mostrar respuesta</summary>
+D) 10 días hábiles.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: Se debe facilitar acceso razonable preservando eficiencia y legalidad de costos.
 
+<i>Justificación:</i> Por mandato de la Ley 5ª de 1992 (Reglamento del Congreso), las autoridades deben responder las solicitudes de información y control político requeridas por los Congresistas en un término perentorio de cinco (5) días hábiles.
 </details>
 
+14. El representante legal de la entidad auditada envía un derecho de petición a la Contraloría solicitando la eliminación definitiva de un hallazgo fiscal de sus bases de datos, utilizando el marco de Habeas Data. ¿Es procedente?
 
-Pregunta 14.
-Una peticion usa lenguaje ofensivo contra servidores. El contenido, sin embargo, plantea hechos auditables.
+A) Sí, en 15 días hábiles debe borrarse el registro para proteger el buen nombre institucional.
 
-Que haces?
+B) Sí, si la entidad auditada demuestra que ya pagó los sobrecostos al contratista.
 
-- A) Archivar por tono ofensivo
-- B) Tramitar por el contenido sustancial y promover trato respetuoso en la respuesta
-- C) Remitir a la policia
-- D) Responder con igual tono
+C) No, se debe trasladar al Ministerio TIC para que decida sobre los datos.
 
-<details><summary>Mostrar respuesta</summary>
+D) No es procedente. Los registros y actuaciones administrativas del control fiscal no son eliminables por petición de Habeas Data, sino desvirtuables únicamente dentro de los procedimientos y recursos legales del proceso fiscal.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: D</b>.
 
-Justificacion: Prima el contenido sustancial; se responde de fondo y se mantiene trato digno.
 
+<i>Justificación:</i> Los antecedentes y hallazgos fiscales son actos administrativos públicos que hacen parte de la historia institucional y del registro de responsables. No aplican las reglas de eliminación comercial del Habeas Data, salvo que un fallo judicial ordene su nulidad.
 </details>
 
+15. Al responder un derecho de petición, el funcionario de la CGR se da cuenta de que el peticionario no proporcionó dirección física, ni correo electrónico, ni teléfono para enviarle la respuesta. ¿Qué se debe hacer para notificarlo válidamente?
 
-Pregunta 15.
-Se recibe solicitud para publicar en web todos los correos individuales del equipo auditor como 'transparencia total'.
+A) Publicar la respuesta mediante un aviso en la página web oficial y en la cartelera física de la entidad por el término legal, para agotar la notificación.
 
-Que haces?
+B) Guardar el documento en el escritorio hasta que el ciudadano aparezca a preguntar.
 
-- A) Publicarlos todos
-- B) Mantener canales institucionales oficiales y publicar buzones designados
-- C) Negar toda forma de contacto
-- D) Usar redes personales
+C) Archivar el caso de inmediato por imposibilidad material.
 
-<details><summary>Mostrar respuesta</summary>
+D) Enviar la respuesta a la Defensoría del Pueblo para que lo busque.
 
-Respuesta correcta: B
-
-Justificacion: La atencion debe canalizarse por medios institucionales con trazabilidad y seguridad.
-
-</details>
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
 
-Pregunta 16.
-El peticionario exige respuesta en formato de tabla y con formulas de hoja de calculo para replicar el analisis.
-
-Que haces?
-
-- A) Negar por capricho
-- B) Responder de fondo; si es razonable y disponible, anexar estructura editable, explicando alcances
-- C) Cobrar una licencia de software
-- D) Restringir a archivo de imagen
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: Debe facilitarse reutilizacion cuando sea razonable y sin cargas desproporcionadas.
-
-</details>
-
-
-Pregunta 17.
-Una peticion pide evidencias completas de una investigacion penal en curso sobre un contratista, para 'colaborar' con la CGR.
-
-Que haces?
-
-- A) Entregar todo
-- B) Negar sin explicar
-- C) Explicar limites competenciales y de reserva; orientar al canal adecuado
-- D) Publicar en la web
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: C
-
-Justificacion: La CGR delimita competencia y respeta reservas; se orienta al canal idoneo.
-
-</details>
-
-
-Pregunta 18.
-Un ciudadano envia videos por mensajeria instantanea solicitando que se tomen como prueba oficial de entrega incompleta de alimentos.
-
-Que haces?
-
-- A) Desestimar por el medio usado
-- B) Recibirlos, asegurar cadena de custodia digital razonable y requerir corroboracion documental
-- C) Pedir solo fotos impresas
-- D) Subirlos a redes para validacion publica
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: Puede admitirse evidencia digital asegurando integridad y corroboracion.
-
-</details>
-
-
-Pregunta 19.
-Llegan peticiones repetidas del mismo usuario con pequenas variaciones semanticas para forzar distintas respuestas.
-
-Que haces?
-
-- A) Tramitar cada una como nueva
-- B) Acumular por conexidad y responder de fondo con un solo acto, dejando trazabilidad
-- C) Archivar todas
-- D) Responder solo la primera
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: La acumulacion por conexidad y la respuesta de fondo aseguran eficiencia y garantias.
-
-</details>
-
-
-Pregunta 20.
-Un tercero solicita copia de un expediente con datos de victimas, alegando investigacion academica.
-
-Que haces?
-
-- A) Entregarlo entero
-- B) Negar toda entrega
-- C) Entregar version con testado estricto y control de acceso, justificando finalidad y minimizacion
-- D) Publicarlo en el portal
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: C
-
-Justificacion: Se protege a poblaciones sensibles aplicando testado y control estricto de acceso.
-
+<i>Justificación:</i> Cuando se desconoce la información del destinatario, el CPACA (Art. 69) determina que la notificación o comunicación de los actos administrativos se realizará mediante aviso que se publicará en la página web y en un lugar público de la entidad por cinco (5) días.
 </details>
 

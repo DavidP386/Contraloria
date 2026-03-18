@@ -1,381 +1,255 @@
-# Tema 9 - Lenguajes y SQL (20 casos)
+# Tema 9: Conocimiento en Lenguajes de Programación y Consultas (SQL, Python, etc.)
+1. Un auditor necesita extraer del sistema transaccional (base de datos relacional) todos los contratistas cuyo monto total sumado de contratos en el año supere los $500 millones. ¿Qué cláusula SQL es la correcta para filtrar este resultado después de agrupar por contratista?
 
-Pregunta 1.
-Durante una auditoria, recibes una base en SQL donde las fechas vienen como texto con formato inconsistente ('01/02/2025', '2025-02-01', '02-01-25'). Debes preparar una consulta para ordenar por fecha real.
+A) WHERE SUM(monto) > 500000000
 
-Que haces?
+B) GROUP BY contratista HAVING SUM(monto) > 500000000
 
-- A) Convertir la columna a un tipo DATE uniforme usando funciones de parseo y documentar la transformacion
-- B) Ordenar directamente por la columna tal como esta
-- C) Eliminar filas con formatos diferentes
-- D) Asignar la fecha actual a las filas dudosas
+C) FILTER (monto > 500000000) GROUP BY contratista
 
-<details><summary>Mostrar respuesta</summary>
+D) ORDER BY monto > 500000000
 
-Respuesta correcta: A
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: El ordenamiento requiere un tipo de dato homogeneo; las fechas deben normalizarse.
 
+<i>Justificación:</i> En SQL, la cláusula WHERE filtra filas individuales antes de agrupar. Para filtrar resultados basados en una función de agregación (como SUM, COUNT o AVG), se debe utilizar obligatoriamente la cláusula HAVING después del GROUP BY.
 </details>
 
+2. Al desarrollar un script en Python utilizando la librería pandas para analizar un archivo CSV del SECOP con 10 millones de filas, el código arroja un error "MemoryError" y el computador se bloquea. ¿Cuál es la mejor práctica de programación para resolver esto sin cambiar de equipo?
 
-Pregunta 2.
-El area tecnica solicita un reporte donde se identifiquen pagos duplicados. La tabla tiene millones de registros y la consulta actual tarda demasiado.
+A) Procesar el archivo por fragmentos (utilizando el parámetro chunksize en pd.read_csv) o cambiar los tipos de datos (ej. de float64 a float32 o category) para reducir el consumo de memoria RAM.
 
-Que haces?
+B) Convertir el CSV a formato PDF antes de leerlo.
 
-- A) Crear un SELECT * sin filtros
-- B) Usar indices apropiados en columnas de factura y proveedor; aplicar GROUP BY HAVING COUNT()>1
-- C) Exportar todo a Excel
-- D) Eliminar las filas que parecen repetidas sin verificar
+C) Usar un bucle for tradicional de Python para leer el archivo línea por línea e imprimir el resultado en pantalla.
 
-<details><summary>Mostrar respuesta</summary>
+D) Dividir el archivo en 100 archivos pequeños de Excel manualmente usando el ratón.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
-Justificacion: Los indices y clausulas HAVING permiten detectar duplicados eficientemente.
 
+<i>Justificación:</i> Pandas carga todo el dataset en la memoria RAM por defecto. Para Big Data, la técnica de Chunking (leer por trozos) y la optimización de los dtypes (tipos de datos) son fundamentales para procesar archivos que superan la capacidad física de la memoria del sistema.
 </details>
 
+3. Se requiere un reporte SQL que muestre la lista de todas las entidades territoriales, y a su lado, la cantidad de reportes fiscales que han enviado. Si una entidad no ha enviado ningún reporte, debe aparecer en la lista con un "0" o "NULL", pero no debe desaparecer. ¿Qué tipo de JOIN (unión) garantiza este resultado?
 
-Pregunta 3.
-Necesitas unir dos tablas de beneficiarios por identificacion, pero una tiene ceros a la izquierda ('00123') y la otra no ('123').
+A) INNER JOIN
 
-Que haces?
+B) CROSS JOIN
 
-- A) Hacer el JOIN y confiar en coincidencias parciales
-- B) Eliminar ceros a la izquierda sin revisar
-- C) Normalizar ambas columnas (TRIM, LPAD o CAST) antes del JOIN
-- D) Usar nombres en lugar de identificacion
+C) LEFT JOIN (o RIGHT JOIN), tomando como tabla principal (izquierda) el catálogo maestro de entidades territoriales.
 
-<details><summary>Mostrar respuesta</summary>
+D) FULL OUTER JOIN
 
-Respuesta correcta: C
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: La normalizacion asegura coincidencias correctas y evita perdidas de registros.
 
+<i>Justificación:</i> Un INNER JOIN solo trae los registros que coinciden en ambas tablas (desaparecería a las entidades sin reportes). Un LEFT JOIN trae todos los registros de la tabla de la izquierda (entidades) y los cruza con los de la derecha, poniendo NULL donde no hay coincidencia.
 </details>
 
+4. Dentro de una consulta SQL, el analista descubre que en la tabla de facturas la fecha está guardada como texto (VARCHAR) en formato 'DD/MM/YYYY'. Al usar la cláusula ORDER BY fecha_texto DESC, el mes de diciembre ('12/01/2023') aparece antes que febrero ('02/02/2024'). ¿Cómo se corrige este problema lógico?
 
-Pregunta 4.
-Un analista usa SELECT DISTINCT * para eliminar duplicados, pero esto elimina filas que si eran diferentes en una sola columna.
+A) Eliminando los registros del año 2023.
 
-Que haces?
+B) Aplicando una función de casteo o conversión (como CAST(fecha_texto AS DATE) o TO_DATE()) antes de realizar el ordenamiento.
 
-- A) Usarlo igual para simplificar
-- B) Pedir que envien otro dataset
-- C) Eliminar columnas para que DISTINCT funcione
-- D) Definir claves compuestas y aplicar deduplicacion precisa
+C) Ordenando primero por el nombre del contratista.
 
-<details><summary>Mostrar respuesta</summary>
+D) Exportando a Excel para ordenar manualmente porque SQL no puede ordenar textos.
 
-Respuesta correcta: D
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: La deduplicacion debe basarse en claves reales, no en todas las columnas juntas.
 
+<i>Justificación:</i> Si una fecha está almacenada como texto, SQL la ordena alfabéticamente (el "1" de 12 es menor que el "0" de 02). Se debe convertir el tipo de dato explícitamente a formato DATE para que el motor entienda la cronología real.
 </details>
 
+5. En Python, tienes un DataFrame de pagos con un millón de filas. Necesitas crear una nueva columna que multiplique el valor del contrato por el impuesto. Un practicante escribe un bucle for que itera sobre cada fila con iterrows(), pero tarda 30 minutos en ejecutar. ¿Cómo optimizas este cálculo?
 
-Pregunta 5.
-Un script en Python que carga datos para auditoria se demora demasiado porque lee el archivo linea por linea.
+A) Utilizando operaciones vectorizadas directas de pandas (ej. df['total'] = df['valor'] * df['impuesto']), lo cual se ejecuta en milisegundos al estar optimizado en lenguaje C por debajo.
 
-Que haces?
+B) Poniendo un comando time.sleep(1) para que el procesador descanse.
 
-- A) Aumentar el tiempo de ejecucion
-- B) Usar lectura por bloques (chunks) o librerias optimizadas (pandas.read_csv con parametros)
-- C) Convertir a Excel para que sea mas rapido
-- D) Borrar lineas del archivo
+C) Dividiendo el cálculo en dos bucles for distintos.
 
-<details><summary>Mostrar respuesta</summary>
+D) Guardando el archivo y haciendo el cálculo en la calculadora de Windows.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
-Justificacion: La lectura por bloques mejora el rendimiento sin perdida de datos.
 
+<i>Justificación:</i> En ciencia de datos con Python (pandas/NumPy), la regla de oro es evitar bucles for y métodos iterativos como apply() o iterrows() siempre que sea posible, utilizando la "vectorización" que procesa matrices enteras simultáneamente con altísimo rendimiento.
 </details>
 
+6. Al revisar una base de datos relacional de contratos, el analista necesita encontrar el contrato más reciente firmado por cada proveedor. ¿Qué función analítica avanzada de SQL permite numerar y rankear los contratos de cada proveedor cronológicamente sin agrupar y perder el detalle?
 
-Pregunta 6.
-Una consulta SQL genera resultados inconsistentes porque usa JOIN sin condiciones completas.
+A) Funciones de Ventana (Window Functions) como ROW_NUMBER() OVER(PARTITION BY proveedor_id ORDER BY fecha DESC).
 
-Que haces?
+B) Usando simplemente un SELECT DISTINCT proveedor_id.
 
-- A) Dejar que SQL haga el join automatico
-- B) Quitar filtros para que 'todo coincida'
-- C) Revisar condiciones ON, evitar joins cartesianos y probar incrementalmente
-- D) Forzar coincidencias con LIKE
+C) Haciendo un CROSS APPLY con la tabla de tiempos.
 
-<details><summary>Mostrar respuesta</summary>
+D) Es imposible hacerlo en una sola consulta SQL, se requiere un script en Java.
 
-Respuesta correcta: C
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
-Justificacion: Joins incompletos producen combinaciones indeseadas que alteran resultados.
 
+<i>Justificación:</i> Las Window Functions (ROW_NUMBER, RANK) son herramientas avanzadas en SQL. La partición (PARTITION BY) crea "ventanas" de datos por proveedor, y el ordenamiento (ORDER BY) enumera internamente los registros (1, 2, 3...) permitiendo filtrar solo el registro número 1 (el más reciente).
 </details>
 
+7. Un script en Python encargado de raspar (Web Scraping) el portal de contratación pública para buscar anomalías a veces falla de madrugada porque el servidor del portal se cae, lo que interrumpe todo el proceso. ¿Qué estructura de control de Python debe usarse para manejar este error sin que el programa se cierre abruptamente?
 
-Pregunta 7.
-Necesitas obtener el segundo valor mas alto de una tabla de pagos.
+A) Una condicional if / else comprobando la memoria RAM.
 
-Que haces?
+B) Una función matemática de valor absoluto.
 
-- A) Ordenar y tomar el primero
-- B) Usar COUNT()
-- C) Eliminar los valores mayores
-- D) Usar funciones como ROW_NUMBER() o subconsulta con MAX() y <>
+C) Bloques de manejo de excepciones try / except, que permiten al código "intentar" la conexión y, si falla, ejecutar una acción alternativa (como esperar 5 minutos y reintentar) en lugar de colapsar.
 
-<details><summary>Mostrar respuesta</summary>
+D) Un bucle infinito while True sin interrupción.
 
-Respuesta correcta: D
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: Las funciones analiticas permiten identificar posiciones especificas.
 
+<i>Justificación:</i> El manejo de excepciones (try/except en Python) es fundamental en la automatización y extracción de datos. Permite capturar errores externos (como caídas de red, timeouts o datos faltantes) y gestionarlos de forma elegante para mantener la resiliencia del pipeline de datos.
 </details>
 
+8. En una consulta SQL, se utiliza el comodín LIKE '%construcción%'. ¿Cuál es el riesgo de rendimiento asociado con esta instrucción en una tabla con millones de registros?
 
-Pregunta 8.
-Una base trae valores nulos en columna clave para unir contratos con proveedores.
+A) Que el motor de base de datos borre accidentalmente las filas.
 
-Que haces?
+B) Ninguno, LIKE es la operación más rápida en SQL.
 
-- A) Identificar origen del nulo, imputar o excluir segun regla documental
-- B) Hacer join igual
-- C) Rellenar con cero siempre
-- D) Concatenar con otra columna para 'improvisar' una llave
+C) Que traducirá los textos al idioma inglés.
 
-<details><summary>Mostrar respuesta</summary>
+D) El uso del comodín % al principio de la cadena inhabilita el uso de índices de búsqueda (Full Table Scan), obligando al motor a leer secuencialmente cada fila de la tabla, lo que degrada críticamente el rendimiento.
 
-Respuesta correcta: A
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: D</b>.
 
-Justificacion: Los nulos en llaves deben corregirse o tratarse con criterio antes del join.
 
+<i>Justificación:</i> Cuando se busca un texto que contiene una palabra en el medio (%texto%), el motor SQL no puede usar el índice estructurado (B-Tree). En analítica fiscal masiva, esto se soluciona usando índices Full-Text Search o bases de datos noSQL especializadas en texto.
 </details>
 
+9. Estás escribiendo un script de Python para limpiar una columna llamada "Valor_Contrato" que viene del SECOP. Los datos vienen con el símbolo de peso y puntos de miles (ej. "$ 1.500.000"). Para poder sumar estos valores matemáticamente, la instrucción correcta utilizando pandas (asumiendo df como el dataframe) es:
 
-Pregunta 9.
-Un informe requiere calcular sobrecostos por proveedor usando SQL.
+A) df['Valor_Contrato'] = df['Valor_Contrato'] * 100
 
-Que haces?
+B) df['Valor_Contrato'] = df['Valor_Contrato'].str.replace('$', '').str.replace('.', '').astype(float)
 
-- A) Usar SUM sin agrupar
-- B) Duplicar los valores para que se vean altos
-- C) Agrupar por proveedor y usar expresiones para comparar valor contratado vs ejecutado
-- D) Registrar solo un proveedor
+C) Dejarlo así, Python suma textos automáticamente.
 
-<details><summary>Mostrar respuesta</summary>
+D) df['Valor_Contrato'].drop_duplicates()
 
-Respuesta correcta: C
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: Las agregaciones deben segmentarse por proveedor para un analisis correcto.
 
+<i>Justificación:</i> Antes de aplicar analítica matemática, los datos financieros deben ser "limpiados". La sintaxis .str.replace() elimina los caracteres especiales de texto (símbolos y puntos delimitadores) y .astype(float) convierte la cadena resultante en un valor numérico continuo (flotante).
 </details>
 
+10. La CGR implementa un formulario web interno para que los auditores busquen contratos. El desarrollador inserta el input del auditor directamente en la consulta: SELECT * FROM contratos WHERE id = ' + input + '. Un usuario malintencionado escribe 1' OR '1'='1. ¿Cómo se denomina esta vulnerabilidad crítica?
 
-Pregunta 10.
-Encontraste columnas duplicadas en una tabla (ej. monto1, monto_duplicado) con valores distintos.
+A) Inyección SQL (SQL Injection), que permite a un atacante manipular la consulta y acceder a información no autorizada. Se previene usando consultas parametrizadas (Prepared Statements).
 
-Que haces?
+B) Denegación de servicio distribuido (DDoS).
 
-- A) Usar cualquiera
-- B) Sumar ambas
-- C) Eliminar la columna duplicada sin revisar
-- D) Verificar trazabilidad, reglas de negocio y consolidar origen correcto
+C) Fuga de memoria (Memory Leak).
 
-<details><summary>Mostrar respuesta</summary>
+D) Error de sintaxis benigno.
 
-Respuesta correcta: D
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
-Justificacion: La consistencia depende de identificar cual columna es valida y su origen.
 
+<i>Justificación:</i> La inyección SQL es la vulnerabilidad número uno en aplicaciones web. Al no sanitizar el input del usuario e inyectarlo en la cadena SQL, el atacante modifica la lógica de la base de datos (la condición OR &#39;1&#39;=&#39;1&#39; siempre es verdadera, devolviendo toda la tabla protegida).
 </details>
 
+11. Al hacer un cruce de datos (Merge/Join) entre la tabla de "Nómina" y "Funcionarios" usando como llave la cédula, el resultado final cuadruplica la cantidad de registros esperados. La causa técnica de este error analítico es:
 
-Pregunta 11.
-Un proceso ETL falla porque cambio el nombre de una columna en la fuente.
+A) Que se usó SQL Server en lugar de Oracle.
 
-Que haces?
+B) Que la cédula de algunos funcionarios está duplicada en la tabla destino, generando un producto cartesiano (relación de muchos a muchos) inintencionada.
 
-- A) Implementar validaciones de esquema y actualizar mapeo documentado
-- B) Cambiar el ETL sin registro
-- C) Ignorar el error
-- D) Quitar la columna
+C) Que se usó un INNER JOIN en lugar de un LEFT JOIN.
 
-<details><summary>Mostrar respuesta</summary>
+D) Que las variables tienen diferente color en el editor de código.
 
-Respuesta correcta: A
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: Los cambios deben registrarse y el ETL debe validarse contra el esquema.
 
+<i>Justificación:</i> Si la llave primaria utilizada para hacer el cruce (JOIN o pd.merge()) tiene valores duplicados en ambas tablas, el motor relacional multiplica las combinaciones (producto cartesiano local), inflando artificialmente el presupuesto y los registros. La tabla de dimensiones siempre debe tener llaves únicas.
 </details>
 
+12. En análisis de datos con Python, ¿qué utilidad tiene la librería scikit-learn en el entorno del control fiscal y la auditoría predictiva?
 
-Pregunta 12.
-Necesitas transformar datos de formato ancho a formato largo para analisis.
+A) Se usa para diseñar las interfaces gráficas y botones de las páginas web.
 
-Que haces?
+B) Es la herramienta principal para la creación de reportes en PDF y formateo de texto legal.
 
-- A) Quedarte con el formato ancho
-- B) Usar funciones UNPIVOT o melt() en Python
-- C) Crear columnas manualmente
-- D) Multiplicar filas
+C) Proporciona los algoritmos estándar de Machine Learning (como Random Forest, K-Means, Regresión) para crear modelos predictivos, detectar anomalías y clasificar riesgos automáticamente.
 
-<details><summary>Mostrar respuesta</summary>
+D) Se utiliza exclusivamente para conectarse a bases de datos en la nube.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: El formato largo facilita analisis agregados y series temporales.
 
+<i>Justificación:</i> scikit-learn es la biblioteca de aprendizaje automático de código abierto más utilizada en Python. Ofrece herramientas de análisis predictivo simples y eficientes, fundamentales para que los científicos de datos de la CGR desarrollen modelos de detección de fraude.
 </details>
 
+13. Tienes una columna de texto "Observaciones" con miles de filas. Quieres extraer únicamente los números de las cuentas bancarias (que siempre tienen 11 dígitos numéricos seguidos) que los supervisores han dejado escritos entre el texto. ¿Qué tecnología de lenguajes de programación es la indicada para esta extracción de patrones?
 
-Pregunta 13.
-Un analista usa SQL con SELECT * en tablas sensibles.
+A) HTML5 semántico.
 
-Que haces?
+B) Expresiones Regulares (RegEx), por ejemplo \b\d{11}\b, que permite buscar y extraer patrones específicos de cadenas dentro de texto no estructurado.
 
-- A) Aceptarlo
-- B) Dar permisos de administrador
-- C) Exportar todo
-- D) Restringir a columnas necesarias y proteger datos sensibles
+C) Funciones aritméticas básicas de Excel.
 
-<details><summary>Mostrar respuesta</summary>
+D) Agrupación por clústeres.
 
-Respuesta correcta: D
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: B</b>.
 
-Justificacion: Se debe limitar exposicion de datos y cumplir proteccion de informacion.
 
+<i>Justificación:</i> Las Expresiones Regulares (Regex) son secuencias de caracteres que conforman un patrón de búsqueda. Son indispensables en analítica fiscal para extraer cédulas, números de contrato, correos o cuentas bancarias ocultas dentro de campos largos de texto libre (observaciones/minutas).
 </details>
 
+14. Una base de datos almacena los montos de ejecución diaria de una obra. Necesitas calcular el "Valor Acumulado" (Running Total) día tras día para comparar la curva de inversión física vs financiera. ¿Qué función en SQL y en pandas (Python) te permite calcular este acumulado dinámico?
 
-Pregunta 14.
-Hay un error porque en Python concatenan cadenas y numeros sin conversion.
+A) En SQL se usa SUM(monto) OVER (ORDER BY fecha) y en pandas la función .cumsum().
 
-Que haces?
+B) En SQL se usa MAX(monto) y en pandas .max().
 
-- A) Convertir tipos explicitamente segun su naturaleza
-- B) Forzar a string todo
-- C) Quitar numeros
-- D) Evitar concatenaciones
+C) En SQL se usa COUNT() y en pandas .value_counts().
 
-<details><summary>Mostrar respuesta</summary>
+D) En SQL se usa DISTINCT y en pandas .unique().
 
-Respuesta correcta: A
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: A</b>.
 
-Justificacion: La conversion de tipos evita errores y mantiene integridad.
 
+<i>Justificación:</i> El total acumulado (Running Total) es fundamental para analizar curvas de ejecución. En SQL se logra combinando una función de agregación con una cláusula de ventana ordenada. En Python (pandas), la función cumsum() (cumulative sum) realiza la operación vectorizada.
 </details>
 
+15. Un script de automatización fiscal ejecuta un procedimiento almacenado (Stored Procedure) que actualiza saldos contables, pero la red se corta a mitad del proceso. ¿Qué mecanismo del motor de base de datos SQL garantiza que no queden saldos a medias (o se actualiza todo o no se actualiza nada)?
 
-Pregunta 15.
-Requieres unir datos de un API json con una tabla SQL.
+A) El uso de índices Clustered.
 
-Que haces?
+B) La sentencia TRUNCATE TABLE.
 
-- A) Pegar los json en Excel
-- B) Normalizar claves, convertir json a estructura tabular y luego unir
-- C) Copiar y pegar los valores
-- D) Unir por filas sin claves
+C) El control de Transacciones (propiedades ACID), utilizando sentencias BEGIN TRAN, COMMIT para guardar todo si hay éxito, o ROLLBACK para deshacer todo si ocurre un error a mitad de camino.
 
-<details><summary>Mostrar respuesta</summary>
+D) El comando DROP DATABASE.
 
-Respuesta correcta: B
+<details><summary><b>Ver respuesta y justificación</b></summary>
+<b>Respuesta correcta: C</b>.
 
-Justificacion: Los json deben tabularse para integrarse con SQL.
 
+<i>Justificación:</i> La atomicidad (la 'A' en ACID) garantiza que una transacción de base de datos se trate como una unidad lógica indivisible. Si ocurre un fallo (ej. corte de energía o red), el ROLLBACK automático protege la base de datos de quedar en un estado corrupto o parcialmente actualizado.
 </details>
-
-
-Pregunta 16.
-Un calculo DAX se recalcula lento por usar columnas calculadas en vez de medidas.
-
-Que haces?
-
-- A) No cambiar nada
-- B) Eliminar columnas
-- C) Reemplazar con medidas basadas en contexto de filtro
-- D) Duplicar tablas
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: C
-
-Justificacion: Las medidas son mas eficientes y responden al contexto.
-
-</details>
-
-
-Pregunta 17.
-El analista quiere meter logica compleja en SQL que corresponde al ETL.
-
-Que haces?
-
-- A) Mantener la logica en ETL y dejar SQL para consultas claras
-- B) Permitirlo
-- C) Dividir todo en muchas subconsultas
-- D) Usar Excel
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: A
-
-Justificacion: El ETL debe contener la transformacion y SQL enfocarse en consulta.
-
-</details>
-
-
-Pregunta 18.
-Necesitas validar la integridad de un dataset masivo.
-
-Que haces?
-
-- A) Revisarlo manual
-- B) Cortar la base
-- C) Implementar checks automaticos (unicidad, nulos, rangos)
-- D) Quitar columnas
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: C
-
-Justificacion: Los checks garantizan calidad sin intervencion manual.
-
-</details>
-
-
-Pregunta 19.
-En Python, un loop sobre filas causa lentitud en una transformacion masiva.
-
-Que haces?
-
-- A) Mantener loop
-- B) Usar operaciones vectorizadas (pandas)
-- C) Procesar una fila al mes
-- D) Crear mas loops
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: B
-
-Justificacion: Las operaciones vectorizadas aceleran miles de veces el procesamiento.
-
-</details>
-
-
-Pregunta 20.
-Un script SQL falla cuando usa LIKE con patrones sin escapar.
-
-Que haces?
-
-- A) Quitar LIKE
-- B) Eliminar filas con errores
-- C) Usar * en vez de %
-- D) Escapar caracteres especiales y validar expresiones
-
-<details><summary>Mostrar respuesta</summary>
-
-Respuesta correcta: D
-
-Justificacion: LIKE requiere manejo adecuado de caracteres especiales.
-
-</details>
-
